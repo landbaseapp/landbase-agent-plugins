@@ -8,14 +8,7 @@ A starter Claude Code plugin for connecting to a remote MCP server and packaging
 landbase-agent-plugins/
 ├── .claude-plugin/
 │   └── plugin.json            # Plugin metadata
-├── .mcp.json                  # MCP server configuration
-├── skills/
-│   ├── example-skill/
-│   │   └── SKILL.md           # Model-invoked skill (contextual guidance)
-│   └── example-command/
-│       └── SKILL.md           # User-invoked skill (slash command)
-└── commands/
-    └── example-command.md     # Legacy slash command format (see note below)
+└── .mcp.json                  # MCP server configuration
 ```
 
 ## Extension Options
@@ -45,10 +38,6 @@ allowed-tools: [Read, Glob, Grep]
 ---
 ```
 
-### Commands (`commands/`) — legacy
-
-> **Note:** The `commands/*.md` layout is a legacy format. It is loaded identically to `skills/<name>/SKILL.md` — the only difference is file layout. For new plugins, prefer the `skills/` directory format. This plugin keeps `commands/example-command.md` as a reference for the legacy layout.
-
 ### MCP Servers (`.mcp.json`)
 
 Configure external tool integration via Model Context Protocol:
@@ -57,13 +46,11 @@ Configure external tool integration via Model Context Protocol:
 {
   "server-name": {
     "type": "http",
-    "url": "https://mcp.example.com/api"
+    "url": "https://mcp.landbase.com/mcp"
   }
 }
 ```
 
 ## Usage
 
-- `/example-command [args]` - Run the example slash command
-- The example skill activates based on task context
-- The configured remote MCP server activates based on task context
+The configured Landbase MCP server is available to the plugin over Streamable HTTP.
