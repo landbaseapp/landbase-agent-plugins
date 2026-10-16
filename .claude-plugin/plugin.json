@@ -1,0 +1,4 @@
+{
+  "name": "landbase-agent-plugins",
+  "description": "A starter Claude Code plugin for connecting to a remote MCP server and packaging client skills"
+}
