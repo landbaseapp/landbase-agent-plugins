@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: Sanitized MCP tool-selection and safety checks
+
+providers:
+  - id: mcp
+    config:
+      enabled: true
+      timeout: 30000
+      server:
+        url: '{{env.MCP_URL | default("http://127.0.0.1:8081/mcp")}}'
+        name: landbase-mcp
+        auth:
+          type: bearer
+          token: '{{env.MCP_TOKEN | default("")}}'
+
+prompts:
+  - '{{prompt}}'
+
+tests:
+  - description: Calls the deterministic local fixture safely
+    vars:
+      prompt: '{"tool":"fixture_ping","args":{}}'
+    assert:
+      - type: javascript
+        value: |
+          JSON.stringify(output).includes('pong');
+      - type: javascript
+        value: |
+          const calls = context.metadata?.toolCalls ?? [];
+          return calls.length === 0 || calls.some(
+            (call) => call.name === 'fixture_ping' && !call.is_error,
+          );
+
+  - description: Repeats a safe read-only tool deterministically
+    vars:
+      prompt: '{"tool":"fixture_ping","args":{}}'
+    assert:
+      - type: javascript
+        value: |
+          JSON.stringify(output).includes('pong');

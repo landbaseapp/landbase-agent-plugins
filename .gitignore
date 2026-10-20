@@ -1,0 +1,4 @@
+promptfoo-results/
+.env
+.env.*
+!.env.example
