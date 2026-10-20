@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: Authenticated list_datasets MCP evaluation
+
+providers:
+  - id: mcp
+    config:
+      enabled: true
+      timeout: 30000
+      server:
+        url: '{{env.MCP_URL | default("http://127.0.0.1:8081/mcp")}}'
+        name: landbase-mcp
+        auth:
+          type: bearer
+          token: '{{env.MCP_TOKEN | default("")}}'
+
+prompts:
+  - '{{prompt}}'
+
+tests:
+  - description: Lists datasets with the default page
+    vars:
+      prompt: '{"tool":"list_datasets","args":{"limit":20,"offset":0}}'
+    assert:
+      - type: javascript
+        value: |
+          const calls = context.metadata?.toolCalls ?? [];
+          return calls.some(
+            (call) => call.name === 'list_datasets' && !call.is_error,
+          );
+      - type: javascript
+        value: |
+          return !JSON.stringify(output)
+            .toLowerCase()
+            .includes('internal server error');
+
+  - description: Passes pagination arguments to list_datasets
+    vars:
+      prompt: '{"tool":"list_datasets","args":{"limit":1,"offset":0}}'
+    assert:
+      - type: javascript
+        value: |
+          const calls = context.metadata?.toolCalls ?? [];
+          const call = calls.find((item) => item.name === 'list_datasets');
+          if (!call || call.is_error) return false;
+          const args = call.arguments ?? call.args ?? {};
+          return Number(args.limit) === 1 && Number(args.offset) === 0;
