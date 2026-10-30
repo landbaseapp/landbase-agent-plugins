@@ -1,0 +1,32 @@
+{
+  "name": "landbase-codex-plugins",
+  "interface": {
+    "displayName": "Landbase"
+  },
+  "plugins": [
+    {
+      "name": "landbase-agent-plugins",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "landbase-cli",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cli-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

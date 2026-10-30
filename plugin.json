@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "landbase-agent-plugins",
+  "version": "0.1.0",
+  "description": "A starter Claude Code plugin for connecting to a remote MCP server and packaging client skills"
+}

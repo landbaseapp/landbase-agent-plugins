@@ -1,0 +1,9 @@
+{
+  "name": "gtm-toolkit",
+  "description": "GTM skills for Landbase — prospect building, ICP capture, TAM mapping, lookalike expansion, and audience enrichment.",
+  "version": "0.2.0",
+  "author": { "name": "Landbase" },
+  "homepage": "https://landbase.com",
+  "license": "MIT",
+  "skills": "./"
+}

@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "digest": "b20b17c377e553d48527501815763c4126871ee5dd4773e8722e787d5a9aa8be",
+  "versions": {
+    "mcp-claude": "0.1.0",
+    "mcp-codex": "0.1.0",
+    "cli-claude": "0.52.0",
+    "cli-codex": "0.52.0",
+    "skill-library": "0.2.0",
+    "mcp-portable": "0.1.0"
+  },
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "mode": "100644",
+      "sha256": "3f4e4bdd4535096f5c282605d93e871f5d69d34fdb0c3b7a82992a99b0a6af33"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "sha256": "0394af2bb8e234ff64a66ad6549b3cc057a0944f9b4fed7512b3be242788f5d7"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "sha256": "fe5b870601d4319608e524415710f0c757b32ee9035422fd84380f843a69c710"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "mode": "100644",
+      "sha256": "204b1bab6241298d95a00c381b5d7ca0cc7193439a0223653b0832227a5d31f9"
+    },
+    {
+      "path": ".mcp.json",
+      "mode": "100644",
+      "sha256": "ae7576f8dd2eecf3940b730c88212ef6e6e5e04684b99bfb5429f0f8de7e2127"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "sha256": "a3aa30c5489b025fe102e9f04b7902b05fe9b12e7a128ef47472179b370cba11"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha256": "a13496908623af1501e4a688a216d638ee60f37c048946f67b389abfa97a4a77"
+    },
+    {
+      "path": "mcp.json",
+      "mode": "100644",
+      "sha256": "9465d4404548de38deefa725f0a969073bfb7bcfb0f2b6d1048304ae0dfdadba"
+    },
+    {
+      "path": "plugin.json",
+      "mode": "100644",
+      "sha256": "e19606e4765b836f7c81dfc15656dc5c13e854359d739f782f0b98c2668dd10b"
+    },
+    {
+      "path": "plugins/cli-claude/.claude-plugin/plugin.json",
+      "mode": "100644",
+      "sha256": "be40f774f4a6f13c7a8622463b1ab9e65c0153333f07d436e6bb344dfbead6dd"
+    },
+    {
+      "path": "plugins/cli-claude/README.md",
+      "mode": "100644",
+      "sha256": "61b04b439b5df4fac518a51edc0795f062e3abc5ee0d9bfdc1d26a31f36ad1bc"
+    },
+    {
+      "path": "plugins/cli-claude/commands/auth.md",
+      "mode": "100644",
+      "sha256": "2fdab8698c87e744ab1232d40314b4557c2ce100074a67bcf64267c43eca9c0c"
+    },
+    {
+      "path": "plugins/cli-claude/commands/continue.md",
+      "mode": "100644",
+      "sha256": "4999911d3886c3483ec9932d6f5f224d9bfa3ef703dc01a980507f6f199b1138"
+    },
+    {
+      "path": "plugins/cli-claude/commands/search.md",
+      "mode": "100644",
+      "sha256": "4b8d0b2db7fafd33ed5dc9cb98e1b11bf91869e9e81360194483ec03a9144210"
+    },
+    {
+      "path": "plugins/cli-claude/commands/setup.md",
+      "mode": "100644",
+      "sha256": "4db85ab1cb282a0578cd213a9fc4be838972bcdde7e991253cc06c73826135c2"
+    },
+    {
+      "path": "plugins/cli-codex/.codex-plugin/plugin.json",
+      "mode": "100644",
+      "sha256": "5b5dbb7b7f89fd314efe5a521a9ddb10e33c49f7e59d96de7c869e032249ba84"
+    },
+    {
+      "path": "plugins/cli-codex/README.md",
+      "mode": "100644",
+      "sha256": "2900e7301194363ba28c6937fe7bc1f026f73041a1070355d19eeb2f66e04ea7"
+    },
+    {
+      "path": "plugins/cli-codex/skills/auth/SKILL.md",
+      "mode": "100644",
+      "sha256": "fc0a77ea503739611ee19dfef0a063560ba88bad0baffa29c9dba8241c9dc381"
+    },
+    {
+      "path": "plugins/cli-codex/skills/continue/SKILL.md",
+      "mode": "100644",
+      "sha256": "dbec4d8b2e2de4cf1a471465b8e6a59b08831b057d9569584f128be33653013c"
+    },
+    {
+      "path": "plugins/cli-codex/skills/search/SKILL.md",
+      "mode": "100644",
+      "sha256": "99f2480d9a2509f82ca062a2efe0498b8d4fc6e5369f7c3429bd46644676d3ed"
+    },
+    {
+      "path": "plugins/cli-codex/skills/setup/SKILL.md",
+      "mode": "100644",
+      "sha256": "8f14a2b12c23bec6306fdde3329526bbaf48eadb7fe5fadd28a6da0bdc79ed37"
+    },
+    {
+      "path": "skill-library/.claude-plugin/plugin.json",
+      "mode": "100644",
+      "sha256": "a324c3c86b0f4aaab40209804b8c6b33d7820dfb2bc01315a9c78c96ea35f0aa"
+    },
+    {
+      "path": "skill-library/recipes/icp-capture/SKILL.md",
+      "mode": "100644",
+      "sha256": "76eca70e08d03d7a20586a40531e7e13df10a4202491ab0ba660c76964e7d560"
+    },
+    {
+      "path": "skill-library/recipes/lookalike-expansion/SKILL.md",
+      "mode": "100644",
+      "sha256": "570c509ca071514a91b5339a29b0a1d149962cea40320cc8485633b877f2e13d"
+    },
+    {
+      "path": "skill-library/recipes/prospect-builder/SKILL.md",
+      "mode": "100644",
+      "sha256": "24a276704c553e4ae8b66721895c58a33d916a534687867b15e6939073120d24"
+    },
+    {
+      "path": "skill-library/recipes/tam-mapping/SKILL.md",
+      "mode": "100644",
+      "sha256": "09f388844e98d70cff76102b1612e9be11993c94467807c8dfb3fdb9e5253dc5"
+    },
+    {
+      "path": "skill-library/tools/contact-enrich/SKILL.md",
+      "mode": "100644",
+      "sha256": "00e75f252d27781d0e8b12b129caaecc38b2fda8338fb03bca81df60b44b421f"
+    },
+    {
+      "path": "skill-library/tools/contacts-import/SKILL.md",
+      "mode": "100644",
+      "sha256": "9aa71c4880e755bf0af4f1c183ef8515bee4766cd17718ad303bed8b470b74bf"
+    },
+    {
+      "path": "skill-library/tools/dataset-management/SKILL.md",
+      "mode": "100644",
+      "sha256": "3895b4e2381756b053945532e799fb9e5ee85b3f2abfa28b212f2543e2b2b4b5"
+    },
+    {
+      "path": "skill-library/tools/dataset-pipeline/SKILL.md",
+      "mode": "100644",
+      "sha256": "622cfad2b80c315360435a0708c4d6866c642aa7b36c2ee6815514aeb4d22027"
+    },
+    {
+      "path": "skill-library/tools/dedupe-leads/SKILL.md",
+      "mode": "100644",
+      "sha256": "841b8908cc8f57fa1cf5100c678f7961a80ee92809b5b1b1fbfd0dd0db29579b"
+    },
+    {
+      "path": "skill-library/tools/dedupe-leads/references/matching-rules.md",
+      "mode": "100644",
+      "sha256": "75de5bee880f1fc044bad02ddcd45df325f7e06f3ffe74ebbc7da279854710f9"
+    },
+    {
+      "path": "skill-library/tools/dedupe-leads/scripts/dedupe.py",
+      "mode": "100644",
+      "sha256": "604034679fb5326a6d2781c1acd30e89ecbc52a506bb99e696a70f9ca3d33214"
+    },
+    {
+      "path": "skill-library/tools/landbase-feedback/SKILL.md",
+      "mode": "100644",
+      "sha256": "ae1ce9fdd5d5f63b6dab758d2722fd8c59fc1a0e69f293a13583f22d903c038c"
+    },
+    {
+      "path": "skill-library/tools/landbase-quickstart/SKILL.md",
+      "mode": "100644",
+      "sha256": "c6d6d5d1d116182162040905e5c5fb2faa6defd0a0dc84211c67f9dee3dfde8a"
+    },
+    {
+      "path": "skill-library/tools/landbase-search/SKILL.md",
+      "mode": "100644",
+      "sha256": "9c42b22db1b78777b8ebb99cdad1cfcb9f48255a0a726152fb63774712e229e3"
+    },
+    {
+      "path": "skill-library/tools/list-similarity-check/SKILL.md",
+      "mode": "100644",
+      "sha256": "176d97ec200b5fd53930c202bdbaaff8b51573276c65c68ee06a1b062b007b2b"
+    },
+    {
+      "path": "skill-library/tools/match-lookup/SKILL.md",
+      "mode": "100644",
+      "sha256": "883e18377d9f2e7071c644d90ae113303ed5917d6d1a4bda85321916cd23fc4b"
+    },
+    {
+      "path": "skill-library/tools/presentation/SKILL.md",
+      "mode": "100644",
+      "sha256": "9ce04c72740f59b7f6906ddac68bf6225c9c16d706caf002421e0f499f3c5e01"
+    },
+    {
+      "path": "skill-library/tools/presentation/references/brand-system.md",
+      "mode": "100644",
+      "sha256": "c2871dfa01b553be88a84c908d845efafee1c32c613dccbeb95dbb56523791a4"
+    },
+    {
+      "path": "skill-library/tools/qualify-leads/SKILL.md",
+      "mode": "100644",
+      "sha256": "02599c63140514ad55d7e39b7735d9c5e2ef808065bf02d19c8341bae2efb24f"
+    },
+    {
+      "path": "skill-library/tools/query-assist/SKILL.md",
+      "mode": "100644",
+      "sha256": "e31771ee1c93a3e825cc8b85159a53e29d7490f74ac17494a852eb4ee045e700"
+    },
+    {
+      "path": "skill-library/tools/transcript-synthesis/SKILL.md",
+      "mode": "100644",
+      "sha256": "b879bc5b77dbdf91e7a2a33b9e6f5263096a5a5b185887c9eb19db59efbb34b4"
+    },
+    {
+      "path": "skill-library/tools/workflow-enrich/SKILL.md",
+      "mode": "100644",
+      "sha256": "7e28c9dc84668918689456178e14040f687b6e07f3f3b1ccace138594c571b55"
+    },
+    {
+      "path": "skill-library/tools/workflow-monitor/SKILL.md",
+      "mode": "100644",
+      "sha256": "453b8f69ff86e24f9f7f2ed4809d03960caf0f277760aaf8ba13e642cd06c91a"
+    },
+    {
+      "path": "skill-library/tools/workflow-transform/SKILL.md",
+      "mode": "100644",
+      "sha256": "a4332a7446a6c7df2d15a24c4c642e61842710e8d40e5bd34d09794944fe1754"
+    }
+  ]
+}

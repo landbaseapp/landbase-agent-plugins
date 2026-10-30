@@ -1,0 +1,8 @@
+{
+  "name": "landbase-cli",
+  "version": "0.52.0",
+  "description": "Landbase B2B prospecting from inside Claude Code — slash commands, bundled skill, and zero-prompt CLI invocations.",
+  "compatibility": {
+    "landbaseCliMin": "0.2.0"
+  }
+}

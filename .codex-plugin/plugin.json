@@ -1,0 +1,9 @@
+{
+  "name": "landbase-agent-plugins",
+  "version": "0.1.0",
+  "description": "A starter Claude Code plugin for connecting to a remote MCP server and packaging client skills",
+  "interface": {
+    "displayName": "Landbase MCP",
+    "shortDescription": "Connect to Landbase through its remote MCP server."
+  }
+}

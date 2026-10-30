@@ -1,0 +1,42 @@
+{
+  "name": "landbase-cli",
+  "version": "0.52.0",
+  "description": "Landbase B2B prospecting from inside Codex CLI — skills for natural-language search, multi-turn sessions, auth, and binary install diagnostics.",
+  "author": {
+    "name": "Landbase",
+    "url": "https://landbase.com"
+  },
+  "homepage": "https://landbase.com",
+  "repository": "https://github.com/landbaseapp/landbase-cli",
+  "license": "MIT",
+  "keywords": [
+    "landbase",
+    "cli",
+    "b2b",
+    "prospecting",
+    "sales"
+  ],
+  "interface": {
+    "displayName": "Landbase",
+    "shortDescription": "B2B prospecting via Landbase agents and the landbase-cli binary.",
+    "longDescription": "Search Landbase's B2B database in natural language, refine results across multi-turn sessions, manage your API key, and install or verify the landbase-cli binary — all from inside Codex CLI. The plugin wraps the public landbase-cli contract (stdout=JSON, documented error codes) and bundles the full Landbase API skill for raw-API workflows (upload, onboard, match, enrich, publish).",
+    "developerName": "Landbase",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://landbase.com",
+    "repository": "https://github.com/landbaseapp/landbase-cli",
+    "brandColor": "#0F62FE",
+    "defaultPrompt": [
+      "Search Landbase for: <natural-language query>",
+      "Continue a Landbase session: <label> <followup query>",
+      "Set or rotate the Landbase API key",
+      "Install or verify the landbase-cli binary"
+    ]
+  },
+  "compatibility": {
+    "landbaseCliMin": "0.2.0"
+  }
+}

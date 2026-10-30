@@ -1,0 +1,16 @@
+{
+  "name": "landbase-plugins",
+  "owner": {
+    "name": "Landbase"
+  },
+  "plugins": [
+    {
+      "name": "landbase-agent-plugins",
+      "source": "./"
+    },
+    {
+      "name": "landbase-cli",
+      "source": "./plugins/cli-claude"
+    }
+  ]
+}
