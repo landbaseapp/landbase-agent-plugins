@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "landbase-agent-plugins",
+      "name": "landbase",
       "source": {
         "source": "local",
         "path": "./"

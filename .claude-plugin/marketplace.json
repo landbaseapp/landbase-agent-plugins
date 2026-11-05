@@ -1,11 +1,15 @@
 {
   "name": "landbase-plugins",
+  "description": "Landbase plugins for Claude Code: the Landbase MCP plugin and the landbase-cli plugin.",
   "owner": {
     "name": "Landbase"
   },
+  "renames": {
+    "landbase-agent-plugins": "landbase"
+  },
   "plugins": [
     {
-      "name": "landbase-agent-plugins",
+      "name": "landbase",
       "source": "./"
     },
     {

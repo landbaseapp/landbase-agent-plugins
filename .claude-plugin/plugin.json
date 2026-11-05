@@ -1,5 +1,32 @@
 {
-  "name": "landbase-agent-plugins",
-  "description": "A starter Claude Code plugin for connecting to a remote MCP server and packaging client skills",
-  "version": "0.1.0"
+  "name": "landbase",
+  "displayName": "Landbase",
+  "version": "0.1.1",
+  "description": "Build B2B prospect lists in plain language. Qualify accounts with AI, get verified work emails and phone numbers, and find lookalikes of your best customers.",
+  "author": {
+    "name": "Landbase, Inc.",
+    "url": "https://www.landbase.com"
+  },
+  "homepage": "https://www.landbase.com",
+  "repository": "https://github.com/landbaseapp/landbase-agent-plugins",
+  "license": "MIT",
+  "keywords": [
+    "landbase",
+    "prospecting",
+    "lead-generation",
+    "b2b-data",
+    "sales",
+    "gtm",
+    "enrichment",
+    "icp",
+    "tam",
+    "account-research",
+    "lookalikes",
+    "contact-data"
+  ],
+  "privacyPolicyUrl": "https://www.landbase.com/legal/privacy-policy",
+  "termsOfServiceUrl": "https://www.landbase.com/legal/terms-of-service",
+  "supportUrl": "https://www.landbase.com/contact",
+  "documentationUrl": "https://docs.landbase.com/guides/mcp/overview",
+  "icon": ".claude-plugin/icon.png"
 }

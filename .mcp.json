@@ -1,5 +1,5 @@
 {
-  "remote-mcp-server": {
+  "landbase": {
     "type": "http",
     "url": "https://mcp.landbase.com/mcp"
   }

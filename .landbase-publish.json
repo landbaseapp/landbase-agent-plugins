@@ -1,39 +1,44 @@
 {
   "format": 1,
-  "digest": "b20b17c377e553d48527501815763c4126871ee5dd4773e8722e787d5a9aa8be",
+  "digest": "e837494293aaf16874e42bb3a72096e29bed9be1d4bcca85010f74220ca000c9",
   "versions": {
-    "mcp-claude": "0.1.0",
-    "mcp-codex": "0.1.0",
+    "mcp-claude": "0.1.1",
+    "mcp-codex": "0.1.1",
     "cli-claude": "0.52.0",
     "cli-codex": "0.52.0",
     "skill-library": "0.2.0",
-    "mcp-portable": "0.1.0"
+    "mcp-portable": "0.1.1"
   },
   "files": [
     {
       "path": ".agents/plugins/marketplace.json",
       "mode": "100644",
-      "sha256": "3f4e4bdd4535096f5c282605d93e871f5d69d34fdb0c3b7a82992a99b0a6af33"
+      "sha256": "8a487a088e80b0df0f653c5947a89a1a7909988589cf8f752cee9119d16e3701"
+    },
+    {
+      "path": ".claude-plugin/icon.png",
+      "mode": "100644",
+      "sha256": "c77a859d2d3ae405111410a01c956ba64c244a1e1866de7aed78fc9e9a981c43"
     },
     {
       "path": ".claude-plugin/marketplace.json",
       "mode": "100644",
-      "sha256": "0394af2bb8e234ff64a66ad6549b3cc057a0944f9b4fed7512b3be242788f5d7"
+      "sha256": "3be52997fe3bb7ce407ca59ffa926f937e02912b3a548b77132b5a4a320689e5"
     },
     {
       "path": ".claude-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "fe5b870601d4319608e524415710f0c757b32ee9035422fd84380f843a69c710"
+      "sha256": "6b8034f4481fffeef89594331b54482664816b97d9e897f306ab1395622f6790"
     },
     {
       "path": ".codex-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "204b1bab6241298d95a00c381b5d7ca0cc7193439a0223653b0832227a5d31f9"
+      "sha256": "3a797f97c257cbec079383622c1e67234dc62a3130ce11f375512c3eefdcae9a"
     },
     {
       "path": ".mcp.json",
       "mode": "100644",
-      "sha256": "ae7576f8dd2eecf3940b730c88212ef6e6e5e04684b99bfb5429f0f8de7e2127"
+      "sha256": "e26aa47f649f432715edab1cb6f3bddf3e8b4a3cf7d25b2b9c19b63496716b35"
     },
     {
       "path": "LICENSE",
@@ -43,17 +48,17 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "a13496908623af1501e4a688a216d638ee60f37c048946f67b389abfa97a4a77"
+      "sha256": "f64c5497d4dfa180953ba29e38102c640eac6ab393b649c5daa12c1b993456a4"
     },
     {
       "path": "mcp.json",
       "mode": "100644",
-      "sha256": "9465d4404548de38deefa725f0a969073bfb7bcfb0f2b6d1048304ae0dfdadba"
+      "sha256": "8477b9fd2a802bb562a614b72cbc878e0aee8807a66e979dbea824d6019a3862"
     },
     {
       "path": "plugin.json",
       "mode": "100644",
-      "sha256": "e19606e4765b836f7c81dfc15656dc5c13e854359d739f782f0b98c2668dd10b"
+      "sha256": "2a70b07eeb47a434cb470c83b590ac5bdee7fd84de1de86c02fda3565b8a4307"
     },
     {
       "path": "plugins/cli-claude/.claude-plugin/plugin.json",
@@ -239,6 +244,51 @@
       "path": "skill-library/tools/workflow-transform/SKILL.md",
       "mode": "100644",
       "sha256": "a4332a7446a6c7df2d15a24c4c642e61842710e8d40e5bd34d09794944fe1754"
+    },
+    {
+      "path": "skills/build-prospect-list/SKILL.md",
+      "mode": "100644",
+      "sha256": "aed6452c52e5554535873c4314700fc3e5bbd4ff3eee2b25fb565a696a53d6de"
+    },
+    {
+      "path": "skills/export-list/SKILL.md",
+      "mode": "100644",
+      "sha256": "e36cb8a619182efcd0a35237cc6c2667a12b9c6d64882add8637071a666d4b58"
+    },
+    {
+      "path": "skills/find-contact-info/SKILL.md",
+      "mode": "100644",
+      "sha256": "607ec0ef9577a9b63035d59664ffad052d01233d198fa2febade478602af1a38"
+    },
+    {
+      "path": "skills/find-lookalike-companies/SKILL.md",
+      "mode": "100644",
+      "sha256": "f4360ea083e51cdd5e247956a0c84bba47e1178b4e5fb971f809757db508f027"
+    },
+    {
+      "path": "skills/get-started/SKILL.md",
+      "mode": "100644",
+      "sha256": "885dddf1dbc85f063d04fe4e49b3f521bcb52efa340233e6e420c1a792637a4d"
+    },
+    {
+      "path": "skills/import-and-match/SKILL.md",
+      "mode": "100644",
+      "sha256": "7878e503e66a83b54f2224dc6260416ea1da3bb906ce56ddac710c0c7126ce10"
+    },
+    {
+      "path": "skills/manage-datasets/SKILL.md",
+      "mode": "100644",
+      "sha256": "22c5afbfe30a073546d60d7cb32023bfda8d04b54ccbef452364420cdde9f21d"
+    },
+    {
+      "path": "skills/qualify-list/SKILL.md",
+      "mode": "100644",
+      "sha256": "e8129ac0c0619107fdcd1314876c640b747332a52813aa8f527fe0f9e94ef37c"
+    },
+    {
+      "path": "skills/research-accounts/SKILL.md",
+      "mode": "100644",
+      "sha256": "6c05a9fec27a63e3180a7492d590cd5808cff95e25e663edbb86a8353349bb35"
     }
   ]
 }
