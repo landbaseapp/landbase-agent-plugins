@@ -1,6 +1,6 @@
 {
   "name": "landbase",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Build B2B prospect lists, then qualify, research and enrich them with emails and phone numbers, with Landbase's company and people data.",
   "interface": {
     "displayName": "Landbase",

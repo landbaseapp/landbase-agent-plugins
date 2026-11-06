@@ -1,5 +1,9 @@
 # Landbase
 
+The Claude MCP plugin lives in [plugins/mcp-claude/](plugins/mcp-claude/).
+Use that folder for Claude Directory submissions; the repository also contains
+separate CLI plugins and a shared CLI skill library.
+
 Bring a comprehensive B2B data platform into Claude: 300M+ verified contacts across 24M+ companies. Landbase is more than just a search engine. It's a compute platform for B2B data: describe the audience you need, then run real-time filters and calculations on the fly to find exactly the right targets.
 
 Optimised for Claude and MCP connections, Landbase supports long-running workflows that combine search, real-time web research, AI qualification and enrichment. Ask your own questions about companies and people, assess their fit, and build context before you reach out.

@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "landbase",
-      "source": "./"
+      "source": "./plugins/mcp-claude"
     },
     {
       "name": "landbase-cli",
