@@ -82,6 +82,14 @@ last 6 months?".
    `preview_dataset`. Use this `output_dataset_id`, not the sample output, for
    the next steps and for an export.
 
+## Deliver dataset results
+
+For attribute enrichment or per-row research, include the completed
+`output_dataset_id` and its source `dataset_id` in the final response, alongside
+the observed row count and material coverage limits. Include both IDs even when
+the result is partial or empty or its evidence is incomplete, so the user can
+reuse the output and distinguish it from the original or a test sample.
+
 ## Rules
 
 - Use an `output_dataset_id` only when its run status is `SUCCEEDED`.

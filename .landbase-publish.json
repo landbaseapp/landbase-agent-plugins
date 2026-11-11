@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "digest": "bd12af4e469ce1cd82bdbeab1e9f8556f372a38ce1d3f1a39720a249bdd1056d",
+  "digest": "546a3abb56d61063e26b6a6361b1f0a303f58dac1989da4ed928ca544570da6f",
   "versions": {
-    "mcp-claude": "0.1.2",
-    "mcp-codex": "0.1.2",
+    "mcp-claude": "0.1.3",
+    "mcp-codex": "0.1.3",
     "cli-claude": "0.52.0",
     "cli-codex": "0.52.0",
     "skill-library": "0.2.0",
-    "mcp-portable": "0.1.2"
+    "mcp-portable": "0.1.3"
   },
   "files": [
     {
@@ -23,7 +23,7 @@
     {
       "path": ".codex-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "e12e0f3eeb0ef3e381f43a08f3944ed1fc7375690935ef216b9c97d935fe96c5"
+      "sha256": "958aa7b2c84270398c5cbeb4918a98f655914fb9089cc54091bdefd8b679b0b2"
     },
     {
       "path": ".mcp.json",
@@ -38,7 +38,7 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "e5df2baf047ad0d90ccaf42b561664a079e1a4300977958cfa0a483184fbf0a7"
+      "sha256": "58829be7b39aebf5e474122aee74e9c37f16a2885d7f061fe8c4e9531ed89198"
     },
     {
       "path": "mcp.json",
@@ -48,7 +48,7 @@
     {
       "path": "plugin.json",
       "mode": "100644",
-      "sha256": "0b1038a1d70688b27d143cdbc7ac91a36d509b02f2594f9c1dc86e4d5bb2ee77"
+      "sha256": "942ae0766dd0513fe2dacdc69ed71f9f2cb9175af101a6890cdb5ab28999762e"
     },
     {
       "path": "plugins/cli-claude/.claude-plugin/plugin.json",
@@ -118,7 +118,7 @@
     {
       "path": "plugins/mcp-claude/.claude-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "2408509bde8fabd1aeae505dd4e9bd6819f0bde92b72bd63926c70e9264793d5"
+      "sha256": "263a9c22118b013afe2d6996808755decec24131227b5b4d5898303706b91ab4"
     },
     {
       "path": "plugins/mcp-claude/.mcp.json",
@@ -133,12 +133,27 @@
     {
       "path": "plugins/mcp-claude/README.md",
       "mode": "100644",
-      "sha256": "3e9409c47a4e9d5cdf224b62ed887ad01c50f9da6903d08fb1af84eca1b65145"
+      "sha256": "337ad8412f0b03828ff8aa1cf3e0ea9d81a39044d0cd0a5ff77d7af058093155"
     },
     {
       "path": "plugins/mcp-claude/skills/build-prospect-list/SKILL.md",
       "mode": "100644",
-      "sha256": "aed6452c52e5554535873c4314700fc3e5bbd4ff3eee2b25fb565a696a53d6de"
+      "sha256": "c24635865dca57cb33ea99fc2e24d543d8a1d50b45c71de4917a21deadbf8c4a"
+    },
+    {
+      "path": "plugins/mcp-claude/skills/expand-dataset/SKILL.md",
+      "mode": "100644",
+      "sha256": "51bf1dc5b3709a8c410c71fda69bf0277bc41f16cb79c3ffccc701e61eecfccf"
+    },
+    {
+      "path": "plugins/mcp-claude/skills/expand-dataset/agents/openai.yaml",
+      "mode": "100644",
+      "sha256": "bae71a80ad2685502b74fd8bfacc9d7c2609cfe9026c15258f0a7a399ffa32d7"
+    },
+    {
+      "path": "plugins/mcp-claude/skills/expand-dataset/references/capability-boundaries.md",
+      "mode": "100644",
+      "sha256": "75275dd73c1aff90b7c485561e54cefc2f5de5bc76ff955bf313ac71f8926e10"
     },
     {
       "path": "plugins/mcp-claude/skills/export-list/SKILL.md",
@@ -178,7 +193,7 @@
     {
       "path": "plugins/mcp-claude/skills/research-accounts/SKILL.md",
       "mode": "100644",
-      "sha256": "6c05a9fec27a63e3180a7492d590cd5808cff95e25e663edbb86a8353349bb35"
+      "sha256": "91695c84c4cafa553b4209be8fc9162090db4bb4e5dec70880a712d875710c93"
     },
     {
       "path": "skill-library/.claude-plugin/plugin.json",
@@ -308,7 +323,22 @@
     {
       "path": "skills/build-prospect-list/SKILL.md",
       "mode": "100644",
-      "sha256": "aed6452c52e5554535873c4314700fc3e5bbd4ff3eee2b25fb565a696a53d6de"
+      "sha256": "c24635865dca57cb33ea99fc2e24d543d8a1d50b45c71de4917a21deadbf8c4a"
+    },
+    {
+      "path": "skills/expand-dataset/SKILL.md",
+      "mode": "100644",
+      "sha256": "51bf1dc5b3709a8c410c71fda69bf0277bc41f16cb79c3ffccc701e61eecfccf"
+    },
+    {
+      "path": "skills/expand-dataset/agents/openai.yaml",
+      "mode": "100644",
+      "sha256": "bae71a80ad2685502b74fd8bfacc9d7c2609cfe9026c15258f0a7a399ffa32d7"
+    },
+    {
+      "path": "skills/expand-dataset/references/capability-boundaries.md",
+      "mode": "100644",
+      "sha256": "75275dd73c1aff90b7c485561e54cefc2f5de5bc76ff955bf313ac71f8926e10"
     },
     {
       "path": "skills/export-list/SKILL.md",
@@ -348,7 +378,7 @@
     {
       "path": "skills/research-accounts/SKILL.md",
       "mode": "100644",
-      "sha256": "6c05a9fec27a63e3180a7492d590cd5808cff95e25e663edbb86a8353349bb35"
+      "sha256": "91695c84c4cafa553b4209be8fc9162090db4bb4e5dec70880a712d875710c93"
     }
   ]
 }

@@ -34,20 +34,29 @@ Landbase builds a dataset from a plain-language request. Each later step
    - If `dataset_created` is false and there is no workflow, tell the user the
      reason from `answer`.
 4. **Check the result.** Call `get_dataset` for the row count and the columns.
-   Call `preview_dataset` to show 5-10 example rows. Ask the user if the list is
-   correct. To change it, call `search` again with the same `session_id` and the
+   Call `preview_dataset` to show 5-10 example rows. Ask whether the list is
+   correct when the user requested a standalone list or an explicit review
+   checkpoint. For an already-requested chain, continue after checking the result,
+   respecting the later tools' credit approvals and review requirements.
+   To change the list, call `search` again with the same `session_id` and the
    change, for example "only companies with more than 200 employees".
 5. **Cut the list to size.** The dataset can have more rows than the user asked
    for. Before a paid step, call `transform_dataset` with
    `SELECT * FROM input_dataset LIMIT 100` (use the number the user wants). Use
    its `output_dataset_id` from then on.
-6. **Offer the next step.** Offer only what the user needs:
+6. **Continue or offer a next step.** Complete further steps the user already
+   requested using the relevant skills. Otherwise, make at most one optional
+   proposal across the skills involved, and skip it for no-extras, exact-query,
+   speed, or declined-suggestion requests. An offer does not authorize execution.
+   Route the step by its purpose:
    - Filter on criteria that the columns do not show: the `qualify-list` skill.
    - Emails or phone numbers: the `find-contact-info` skill.
    - Facts about each company, such as funding or pricing: the
      `research-accounts` skill.
    - More companies like the best ones: the `find-lookalike-companies` skill.
    - A file: the `export-list` skill.
+   - Cross-record signals, joins, or a branch from earlier results: the
+     `expand-dataset` skill.
 
 ## Rules
 

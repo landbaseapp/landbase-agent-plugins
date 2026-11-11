@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expand Landbase Data"
+  short_description: "Add signals or broader coverage to a Landbase list"
+  default_prompt: "Use $expand-dataset to suggest a useful signal or audience expansion for my existing list."

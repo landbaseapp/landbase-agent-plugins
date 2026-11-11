@@ -16,7 +16,7 @@ Use it for ICP/TAM mapping, account-based marketing lists, outbound prospecting 
 
 Sign up for free at landbase.com. Pricing is simple: see the credit quote for each step before it runs, and approve steps that use credits.
 
-This Claude plugin includes nine skills and the Landbase MCP connection for search, research, qualification, enrichment and export. The CRM and execution integrations described above are available through the wider Landbase platform; they are not exposed by this plugin’s current MCP tools.
+This Claude plugin includes ten skills and the Landbase MCP connection for search, research, qualification, enrichment and export. The CRM and execution integrations described above are available through the wider Landbase platform; they are not exposed by this plugin’s current MCP tools.
 
 ## What you can ask
 
@@ -34,12 +34,13 @@ This Claude plugin includes nine skills and the Landbase MCP connection for sear
 - **A connection to the Landbase MCP server** at `https://mcp.landbase.com/mcp`
   (remote, Streamable HTTP). You sign in with your Landbase account through
   OAuth. The plugin does not store a password or an API key.
-- **Nine skills** that show Claude how to use the Landbase tools step by step:
+- **Ten skills** that show Claude how to use the Landbase tools step by step:
 
 | Skill | What it does |
 | --- | --- |
 | `get-started` | Checks your account and credit balance, shows what you can ask, and lists plans when you need more credits |
 | `build-prospect-list` | Builds a list of companies or people from a plain-language request |
+| `expand-dataset` | Extends a list with derived signals, owned-data joins, or a related audience while preserving its source |
 | `qualify-list` | Checks each row against your yes/no criteria and keeps the rows that pass |
 | `research-accounts` | Adds standard attributes or a custom research answer to each row, or looks up one company or person |
 | `find-contact-info` | Finds work emails and phone numbers for a list of people |
