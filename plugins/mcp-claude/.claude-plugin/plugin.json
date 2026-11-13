@@ -1,8 +1,8 @@
 {
   "name": "landbase",
   "displayName": "Landbase",
-  "version": "0.1.3",
-  "description": "Build B2B prospect lists in plain language. Qualify accounts with AI, get verified work emails and phone numbers, and find lookalikes of your best customers.",
+  "version": "0.1.4",
+  "description": "Give Claude answers beyond web search. Compute custom signals on companies and people from your own data, web data and Landbase's private datasets, for market research, competitive intelligence and sales lists with verified contact details.",
   "author": {
     "name": "Landbase, Inc.",
     "url": "https://www.landbase.com"
@@ -22,7 +22,11 @@
     "tam",
     "account-research",
     "lookalikes",
-    "contact-data"
+    "contact-data",
+    "market-research",
+    "competitive-intelligence",
+    "data-analysis",
+    "signals"
   ],
   "privacyPolicyUrl": "https://www.landbase.com/legal/privacy-policy",
   "termsOfServiceUrl": "https://www.landbase.com/legal/terms-of-service",

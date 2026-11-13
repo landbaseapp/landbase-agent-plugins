@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "digest": "546a3abb56d61063e26b6a6361b1f0a303f58dac1989da4ed928ca544570da6f",
+  "digest": "162cd4628b1d1915f2e027e2314040c7a5ad5af69aa873909cce12e54c42326e",
   "versions": {
-    "mcp-claude": "0.1.3",
-    "mcp-codex": "0.1.3",
+    "mcp-claude": "0.1.4",
+    "mcp-codex": "0.1.4",
     "cli-claude": "0.52.0",
     "cli-codex": "0.52.0",
     "skill-library": "0.2.0",
-    "mcp-portable": "0.1.3"
+    "mcp-portable": "0.1.4"
   },
   "files": [
     {
@@ -23,7 +23,7 @@
     {
       "path": ".codex-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "958aa7b2c84270398c5cbeb4918a98f655914fb9089cc54091bdefd8b679b0b2"
+      "sha256": "b623db079114cde3b34939a45a08f6751d7b93a38be5aba428c4e546d47d7f79"
     },
     {
       "path": ".mcp.json",
@@ -38,7 +38,7 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "58829be7b39aebf5e474122aee74e9c37f16a2885d7f061fe8c4e9531ed89198"
+      "sha256": "81d5439407609af1e2cfac07afb4f1fb4a0fb3b30d605345534cbb6488f579a4"
     },
     {
       "path": "mcp.json",
@@ -48,7 +48,7 @@
     {
       "path": "plugin.json",
       "mode": "100644",
-      "sha256": "942ae0766dd0513fe2dacdc69ed71f9f2cb9175af101a6890cdb5ab28999762e"
+      "sha256": "83fe0d80db5c2645178967b4bc51fba019af6605c52e1e752577055b2e18233e"
     },
     {
       "path": "plugins/cli-claude/.claude-plugin/plugin.json",
@@ -118,7 +118,7 @@
     {
       "path": "plugins/mcp-claude/.claude-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "263a9c22118b013afe2d6996808755decec24131227b5b4d5898303706b91ab4"
+      "sha256": "7d528a0cf4925376410c5409031b3ba2764f9fa67bbb84640679e22a05cacccb"
     },
     {
       "path": "plugins/mcp-claude/.mcp.json",
@@ -133,17 +133,22 @@
     {
       "path": "plugins/mcp-claude/README.md",
       "mode": "100644",
-      "sha256": "337ad8412f0b03828ff8aa1cf3e0ea9d81a39044d0cd0a5ff77d7af058093155"
+      "sha256": "2e380a3f2aff56bc545810a8a43663ad5a37241ca86bf1471819a0998f9f126b"
+    },
+    {
+      "path": "plugins/mcp-claude/skills/advanced-search/SKILL.md",
+      "mode": "100644",
+      "sha256": "0d0f798d2739b3fb3529c28ce57bdad3819f6d3b3b917f939bb548aa823e4503"
     },
     {
       "path": "plugins/mcp-claude/skills/build-prospect-list/SKILL.md",
       "mode": "100644",
-      "sha256": "c24635865dca57cb33ea99fc2e24d543d8a1d50b45c71de4917a21deadbf8c4a"
+      "sha256": "003a124109102bd0ac1957359cd54d50db035fe7b1ae06e67e572077802ec14e"
     },
     {
       "path": "plugins/mcp-claude/skills/expand-dataset/SKILL.md",
       "mode": "100644",
-      "sha256": "51bf1dc5b3709a8c410c71fda69bf0277bc41f16cb79c3ffccc701e61eecfccf"
+      "sha256": "f268144aea830b4ec39526de120188ef868bf18f062c9a552e7e5586c548f3fc"
     },
     {
       "path": "plugins/mcp-claude/skills/expand-dataset/agents/openai.yaml",
@@ -158,22 +163,22 @@
     {
       "path": "plugins/mcp-claude/skills/export-list/SKILL.md",
       "mode": "100644",
-      "sha256": "e36cb8a619182efcd0a35237cc6c2667a12b9c6d64882add8637071a666d4b58"
+      "sha256": "038f4a4eedad9a7fbf5e4458cac6d683679ac5e12c2d832ae4f5b20140e828a4"
     },
     {
       "path": "plugins/mcp-claude/skills/find-contact-info/SKILL.md",
       "mode": "100644",
-      "sha256": "607ec0ef9577a9b63035d59664ffad052d01233d198fa2febade478602af1a38"
+      "sha256": "852405d19ff6427be58c03cb14ccf1523090f79c3f54cd40e7cdd968475f0847"
     },
     {
       "path": "plugins/mcp-claude/skills/find-lookalike-companies/SKILL.md",
       "mode": "100644",
-      "sha256": "f4360ea083e51cdd5e247956a0c84bba47e1178b4e5fb971f809757db508f027"
+      "sha256": "cedb8b1edf1c4b5b667cff1e6f35423d5176ecc651adb6724ab6ec820d399128"
     },
     {
       "path": "plugins/mcp-claude/skills/get-started/SKILL.md",
       "mode": "100644",
-      "sha256": "885dddf1dbc85f063d04fe4e49b3f521bcb52efa340233e6e420c1a792637a4d"
+      "sha256": "65d81f4fb04756da922e3df1df9af3383f9aa0fff4911f97fc6bcd62065623d3"
     },
     {
       "path": "plugins/mcp-claude/skills/import-and-match/SKILL.md",
@@ -183,17 +188,22 @@
     {
       "path": "plugins/mcp-claude/skills/manage-datasets/SKILL.md",
       "mode": "100644",
-      "sha256": "22c5afbfe30a073546d60d7cb32023bfda8d04b54ccbef452364420cdde9f21d"
+      "sha256": "8a7e86a001a15473b8c81880908a90a2340f7bd14bff032fa0f78d32d0f1ad76"
+    },
+    {
+      "path": "plugins/mcp-claude/skills/market-insights/SKILL.md",
+      "mode": "100644",
+      "sha256": "2ecc14f33af3c2bb28a016c6aee24998490e3537f5e397eaa7a2c81d2127a182"
     },
     {
       "path": "plugins/mcp-claude/skills/qualify-list/SKILL.md",
       "mode": "100644",
-      "sha256": "e8129ac0c0619107fdcd1314876c640b747332a52813aa8f527fe0f9e94ef37c"
+      "sha256": "4bca5e6f402ecff4c8504a351cbd476d0d4eed8705db5b9b861eb017f5b1fe1a"
     },
     {
       "path": "plugins/mcp-claude/skills/research-accounts/SKILL.md",
       "mode": "100644",
-      "sha256": "91695c84c4cafa553b4209be8fc9162090db4bb4e5dec70880a712d875710c93"
+      "sha256": "ce7ec65c0478ad5ec2866c6008534d49aeb49b938d45665d9f9c0b39821fbd4d"
     },
     {
       "path": "skill-library/.claude-plugin/plugin.json",
@@ -321,14 +331,19 @@
       "sha256": "a4332a7446a6c7df2d15a24c4c642e61842710e8d40e5bd34d09794944fe1754"
     },
     {
+      "path": "skills/advanced-search/SKILL.md",
+      "mode": "100644",
+      "sha256": "0d0f798d2739b3fb3529c28ce57bdad3819f6d3b3b917f939bb548aa823e4503"
+    },
+    {
       "path": "skills/build-prospect-list/SKILL.md",
       "mode": "100644",
-      "sha256": "c24635865dca57cb33ea99fc2e24d543d8a1d50b45c71de4917a21deadbf8c4a"
+      "sha256": "003a124109102bd0ac1957359cd54d50db035fe7b1ae06e67e572077802ec14e"
     },
     {
       "path": "skills/expand-dataset/SKILL.md",
       "mode": "100644",
-      "sha256": "51bf1dc5b3709a8c410c71fda69bf0277bc41f16cb79c3ffccc701e61eecfccf"
+      "sha256": "f268144aea830b4ec39526de120188ef868bf18f062c9a552e7e5586c548f3fc"
     },
     {
       "path": "skills/expand-dataset/agents/openai.yaml",
@@ -343,22 +358,22 @@
     {
       "path": "skills/export-list/SKILL.md",
       "mode": "100644",
-      "sha256": "e36cb8a619182efcd0a35237cc6c2667a12b9c6d64882add8637071a666d4b58"
+      "sha256": "038f4a4eedad9a7fbf5e4458cac6d683679ac5e12c2d832ae4f5b20140e828a4"
     },
     {
       "path": "skills/find-contact-info/SKILL.md",
       "mode": "100644",
-      "sha256": "607ec0ef9577a9b63035d59664ffad052d01233d198fa2febade478602af1a38"
+      "sha256": "852405d19ff6427be58c03cb14ccf1523090f79c3f54cd40e7cdd968475f0847"
     },
     {
       "path": "skills/find-lookalike-companies/SKILL.md",
       "mode": "100644",
-      "sha256": "f4360ea083e51cdd5e247956a0c84bba47e1178b4e5fb971f809757db508f027"
+      "sha256": "cedb8b1edf1c4b5b667cff1e6f35423d5176ecc651adb6724ab6ec820d399128"
     },
     {
       "path": "skills/get-started/SKILL.md",
       "mode": "100644",
-      "sha256": "885dddf1dbc85f063d04fe4e49b3f521bcb52efa340233e6e420c1a792637a4d"
+      "sha256": "65d81f4fb04756da922e3df1df9af3383f9aa0fff4911f97fc6bcd62065623d3"
     },
     {
       "path": "skills/import-and-match/SKILL.md",
@@ -368,17 +383,22 @@
     {
       "path": "skills/manage-datasets/SKILL.md",
       "mode": "100644",
-      "sha256": "22c5afbfe30a073546d60d7cb32023bfda8d04b54ccbef452364420cdde9f21d"
+      "sha256": "8a7e86a001a15473b8c81880908a90a2340f7bd14bff032fa0f78d32d0f1ad76"
+    },
+    {
+      "path": "skills/market-insights/SKILL.md",
+      "mode": "100644",
+      "sha256": "2ecc14f33af3c2bb28a016c6aee24998490e3537f5e397eaa7a2c81d2127a182"
     },
     {
       "path": "skills/qualify-list/SKILL.md",
       "mode": "100644",
-      "sha256": "e8129ac0c0619107fdcd1314876c640b747332a52813aa8f527fe0f9e94ef37c"
+      "sha256": "4bca5e6f402ecff4c8504a351cbd476d0d4eed8705db5b9b861eb017f5b1fe1a"
     },
     {
       "path": "skills/research-accounts/SKILL.md",
       "mode": "100644",
-      "sha256": "91695c84c4cafa553b4209be8fc9162090db4bb4e5dec70880a712d875710c93"
+      "sha256": "ce7ec65c0478ad5ec2866c6008534d49aeb49b938d45665d9f9c0b39821fbd4d"
     }
   ]
 }

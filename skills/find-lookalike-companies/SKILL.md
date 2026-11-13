@@ -6,8 +6,8 @@ description: Find companies that are similar to a set of example companies, for 
 # Find lookalike companies
 
 The `similar_company_expansion` workflow starts from a dataset of example
-companies (the seed) and makes a new dataset of similar companies. It uses
-credits. The result can have thousands of companies.
+companies (the seed) and makes a new dataset of similar companies. It costs 0
+credits today. The result can have thousands of companies.
 
 ## Steps
 
@@ -27,14 +27,11 @@ credits. The result can have thousands of companies.
    50-500 employees".
 4. **Ask how many companies the user wants.** Tell the user that a full run can
    return a large number of companies.
-5. **Get a quote.** Call `run_workflow` with
-   `workflow="similar_company_expansion"`, the seed `dataset_id` and
-   `params={"firmographics_guidance": "..."}`, without `confirm`. Show the quote
-   to the user and ask for approval.
-6. **Run.** After the user agrees, call `run_workflow` again with the same
-   arguments and `confirm=true`. Call `get_workflow_run` until the status is
-   `SUCCEEDED`. The new companies are in the `output_dataset_id`.
-7. **Show the result.** Call `get_dataset` and `preview_dataset`. To keep only
+5. **Run.** Call `run_workflow` with `workflow="similar_company_expansion"`,
+   the seed `dataset_id`, `params={"firmographics_guidance": "..."}` and
+   `confirm=true`. Call `get_workflow_run` until the status is `SUCCEEDED`. The
+   new companies are in the `output_dataset_id`.
+6. **Show the result.** Call `get_dataset` and `preview_dataset`. To keep only
    the number that the user asked for, call `transform_dataset` with a `LIMIT`
    or a `WHERE` clause.
 
@@ -44,6 +41,8 @@ credits. The result can have thousands of companies.
   `transform_dataset` can return while its run is `RUNNING`. Then call
   `get_workflow_run` with its `workflow_run_id` until the run stops. If the
   status is `FAILED` or `CANCELLED`, stop and tell the user the reason.
-- Do not start a paid run without a quote and the user's approval.
+- The workflow costs 0 credits today, so there is no cost to approve. The
+  tool still needs `confirm=true` to start it. Lookalikes that you build with
+  `search(mode="research")` are different: that search uses credits.
 - Keep the `workflow_run_id`. A timeout does not stop the run. Check the status
   before you start the run again.

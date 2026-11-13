@@ -1,6 +1,6 @@
 ---
 name: expand-dataset
-description: Expand the usefulness or coverage of a Landbase dataset with derived signals, team metrics, career-history connections, owned-data joins, or a new audience branch. Use when the user asks how to extend a list, add cross-record calculations, or broaden an audience using existing results. Standalone searches, per-row research, qualification, contact lookup, and dataset administration belong to their dedicated Landbase skills.
+description: Expand the usefulness or coverage of a Landbase dataset with derived signals, team metrics, career-history connections, owned-data joins, or a new audience branch. Use when the user asks how to extend a list, add cross-record calculations, or broaden an audience using existing results. Standalone searches, market or competitor questions that start without a list, per-row research, qualification, contact lookup, and dataset administration belong to their dedicated Landbase skills.
 ---
 
 # Expand a Landbase dataset
@@ -13,6 +13,8 @@ Use this skill for the expansion decision and its dataset lineage. Use
 `build-prospect-list` for a standalone search, `research-accounts` for standard
 attributes or a per-row fact, `qualify-list` for yes/no filtering, and
 `manage-datasets` for status, discovery, cancellation, or deletion. Use
+`market-insights` for a market, competitor or talent question that starts without a
+list, for example "Where do product managers from big tech companies go next?". Use
 `import-and-match` to prepare an uploaded list before extending it. A request only
 for lookalikes belongs to `find-lookalike-companies`; use that skill for an
 accepted similar-company expansion within a broader expansion task.
@@ -66,23 +68,27 @@ For temporal, coverage-sensitive, or semantic/seed requests, read
 Use `search(mode="research")` when the expansion needs calculations across
 related records, career-history conditions, or joins to the wider Landbase data.
 Use `transform_dataset` when the source rows already contain all required inputs.
-Follow the tools' polling contract. Confirm a research proposal with its
-returned `session_id` in the same research mode after reviewing its logic, columns,
-assumptions, and estimate with the user. Changed work needs an updated proposal.
+Follow the tools' polling contract. When research mode returns a proposal, check
+that its logic and columns match the request, then confirm it at once with its
+returned `session_id` in the same research mode. Do not ask the user to approve
+the cost. If the proposal does not match, refine it first; changed work needs an
+updated proposal.
 Inspect the completed result before reuse and use a successful workflow's
 `output_dataset_id` for the next step.
 
-For unattended runs, stop at the tools' credit-approval boundary and return the
-proposal, estimate, IDs, and next action as pending approval; automation is not
-consent. If Landbase tools are unavailable, provide the proposed query and explain
-the missing connection.
+Run the paid steps that the user asked for with `confirm=true` on the first call,
+in interactive and unattended runs. Landbase deducts the credits when a step runs;
+do not ask the user to approve the cost. If the user asks to see the cost first,
+call the tool without `confirm`, show the quote, and wait for their answer. Never
+run an optional addition that the user did not accept. If Landbase tools are
+unavailable, provide the proposed query and explain the missing connection.
 
 ## Preserve sources and branches
 
 An expansion can combine several signal families and downstream operations, or
 branch from a usable earlier dataset. If the user requested the full chain,
-continue across its steps while respecting credit approval and explicit review
-checkpoints. If the user requested only one operation, deliver it before offering
+continue across its steps without stopping for credit approval; stop only at
+review checkpoints that the user asked for. If the user requested only one operation, deliver it before offering
 an optional expansion; an offer does not authorize another step.
 
 - Choose each step's input deliberately. A filtered result is useful for targeted
@@ -101,7 +107,7 @@ an optional expansion; an offer does not authorize another step.
   cannot read arbitrary sibling datasets.
 - Report which dataset each branch used and where its outputs are. Reusing an
   earlier snapshot preserves its original coverage and age; obtain fresh data
-  only when the request requires it, with the applicable quote and approval.
+  only when the request requires it.
 
 ## Deliver the expanded result
 
@@ -117,9 +123,10 @@ calculation limits. Route accepted follow-ups by their required data:
 - Existing rows already contain the inputs: use `transform_dataset` for SQL over
   that dataset. It cannot query the wider company/person population by itself.
 
-Quote any paid follow-up using the tool's normal flow and wait for approval.
-When a user accepts an addition before the initial build, include it in that
-proposal rather than silently launching a separate paid workflow.
+Run a paid follow-up only after the user accepts it, then start it with
+`confirm=true` without a separate cost-approval step. When a user accepts an
+addition before the initial build, include it in that build rather than silently
+launching a separate paid workflow.
 After launch, wait for the original result to be ready, then apply the accepted
 addition as a follow-up on that dataset using the relevant capability above.
 Preserve the original dataset and return the new output ID and its source; do
