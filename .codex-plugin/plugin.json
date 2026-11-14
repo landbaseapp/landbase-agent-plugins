@@ -1,6 +1,6 @@
 {
   "name": "landbase",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Give your agent answers beyond web search. Landbase computes custom signals from your own data, web data and its private company and people datasets, for market research, competitive intelligence and sales lists.",
   "interface": {
     "displayName": "Landbase",

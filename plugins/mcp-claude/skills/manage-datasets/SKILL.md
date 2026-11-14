@@ -1,6 +1,6 @@
 ---
 name: manage-datasets
-description: Find and manage the user's Landbase datasets and runs - list datasets, show where a dataset came from, check or cancel a workflow run, get back a search after a lost response, and delete a dataset. Use when the user asks "what lists do I have", "where is my list", "is my run finished", "the search timed out", "cancel that run" or "delete this list".
+description: Find, inspect and summarize existing Landbase datasets; manage runs, recover lost responses and delete datasets. Use for questions about saved lists or their rows, whole-list counts and breakdowns, lineage, run status, cancellation or deletion.
 ---
 
 # Manage datasets and runs
@@ -15,10 +15,21 @@ every call.
    `offset`.
 2. Call `get_dataset` for the name, the status, the row count and the columns.
    Set `include_runs=true` to see the processing runs.
-3. To answer a question about the rows, call `preview_dataset` with read-only
-   SQL. The table name is `input_dataset`, for example
-   `SELECT industry, COUNT(*) FROM input_dataset GROUP BY 1`. It shows a
-   maximum of 100 rows.
+3. Inspect values with `preview_dataset`. Its SQL runs over only the first
+   100 source rows, including filters and aggregates. Label these as sample
+   results unless `get_dataset` confirms `row_count` is at most 100; then preview
+   SQL covers the full source. A small aggregate output alone proves nothing
+   about source coverage. For a larger or unknown-size whole-list count or
+   breakdown, use `transform_dataset` with SQL over
+   `input_dataset`, for example
+   `SELECT industry, COUNT(*) AS row_count FROM input_dataset GROUP BY industry`.
+   Wait for `SUCCEEDED` (poll `get_workflow_run` if still running), then preview
+   the summary's `output_dataset_id`. Return the source and summary dataset IDs
+   and state what is counted. Tell the user that the summary was saved and can
+   be removed with `delete_dataset` after confirmation; deleting the source
+   leaves the summary. Check the summary's row count too: if its preview
+   is truncated, do not present it as the complete breakdown. An explicit
+   preview/sample request needs only a preview, not a full transform.
 4. To find related datasets, call `get_dataset_lineage`:
    - `direction="parents"` shows the dataset that a dataset came from.
    - `direction="children"` shows the datasets that were made from it, for

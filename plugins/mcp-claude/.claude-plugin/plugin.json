@@ -1,7 +1,7 @@
 {
   "name": "landbase",
   "displayName": "Landbase",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Give Claude answers beyond web search. Compute custom signals on companies and people from your own data, web data and Landbase's private datasets, for market research, competitive intelligence and sales lists with verified contact details.",
   "author": {
     "name": "Landbase, Inc.",

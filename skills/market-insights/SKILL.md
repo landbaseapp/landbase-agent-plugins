@@ -32,9 +32,16 @@ answers yet.
      until it changes. Do not start the same search again.
    - If the result has a `workflow_run_id`, call `get_workflow_run` until the
      status is `SUCCEEDED`. Then use its `output_dataset_id`.
-4. **Read the result.** Call `get_dataset_fields` and `preview_dataset`. If the
-   user wants a cut that the columns already allow (a top 10, a group by, a
-   threshold), use `transform_dataset`. Do not run a new search for it.
+4. **Read the result.** Call `get_dataset` and `get_dataset_fields`; inspect
+   values with `preview_dataset`. Preview SQL sees only the first 100 source
+   rows. Use `transform_dataset` for whole-result counts, breakdowns, ordering
+   or filters unless metadata confirms the entire source has at most 100 rows.
+   Wait for `SUCCEEDED` and preview its output. Check that output's row count
+   before treating the preview as complete; label excerpts as samples. A top
+   10 over a larger source must be computed by a transform before previewing.
+   Do not run a new search for a cut the columns already allow. Return any
+   saved summary ID and say it is a new dataset removable with `delete_dataset`
+   after confirmation.
 5. **Answer with the numbers.**
    - Start with the answer in one or two sentences.
    - Then give a small table that is ready for a chart: one label column and

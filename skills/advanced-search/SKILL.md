@@ -44,10 +44,18 @@ that: it reads each company's website and keeps only the real fits.
    (for example `ai_qualification_result`). Call `transform_dataset` with
    `SELECT * FROM input_dataset WHERE ai_qualification_result = 'Yes'` (use the
    real column name and value). Its output is the final list.
-7. **Report.** Give the user the count and the dataset id of the final list,
-   and the sizes of list A, list B and the merged list. Say how many fits came
-   only from the wide search. That number shows what the technique added. You
-   can state the credits used. Make at most one optional suggestion.
+7. **Report.** Wait for each output to be `SUCCEEDED`. Use `get_dataset` row
+   counts for the final list, list A, list B and the merged list, and give the
+   final dataset ID. Compute fits found only by the wide search over the full
+   datasets using `transform_dataset` and the same company key; final rows
+   absent from list A are the added fits. Do not infer this from preview rows
+   or subtract the unqualified search sizes. Preview SQL sees only the first
+   100 source rows; it covers a whole input only when metadata confirms at most
+   100 rows. Preview completed summaries, label examples as samples, and name
+   any saved summary datasets as removable with `delete_dataset` after
+   confirmation. If the available fields or transform inputs cannot establish
+   the added-fit count, say so. You can state the credits used. Make at most
+   one optional suggestion.
 
 Variations:
 
