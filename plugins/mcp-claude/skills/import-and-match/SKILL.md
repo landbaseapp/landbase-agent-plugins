@@ -85,6 +85,11 @@ or counting supported identities, not when the user asks for possible matches.
    enriching its ID or reading its employer's website is not corroboration.
    If no such identifier is available, keep the candidate for review.
 
+For candidate refreshes, show original and observed employers and roles side
+by side, keep uncertain matches visible for review, and summarize the results
+by talent pool. Use the review policy above when reporting who appears to fit
+a role now.
+
 ## Rules
 
 - Use an `output_dataset_id` only when its run status is `SUCCEEDED`. If the

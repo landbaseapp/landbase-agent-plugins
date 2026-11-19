@@ -1,7 +1,7 @@
 {
   "name": "landbase-cli",
-  "version": "0.52.0",
-  "description": "Landbase B2B prospecting from inside Claude Code — slash commands, bundled skill, and zero-prompt CLI invocations.",
+  "version": "0.54.0",
+  "description": "Find, research, and analyze companies and people using Landbase datasets, web research, and data you provide.",
   "compatibility": {
     "landbaseCliMin": "0.2.0"
   }

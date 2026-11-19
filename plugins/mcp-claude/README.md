@@ -1,6 +1,16 @@
 # Landbase
 
-Give Claude answers beyond web search. Landbase computes custom signals from your first-party data, web data and private datasets to drive business outcomes.
+Find, research, and analyze companies and people using Landbase datasets, web research, and data you provide.
+
+Use Landbase to discover companies and people, research or evaluate them, and answer questions across records, lists, and populations.
+
+Discover by custom criteria: Find people or companies using calculated attributes. For example, find companies with substantial platform-engineering teams and compare their security-to-platform-engineering staffing ratios.
+
+Connect data, uncover signals: Combine existing records with external context. For example, identify portfolio companies with more engineering than sales job postings.
+
+Refresh and reclassify records: Update information and reassess which records fit. For example, refresh a candidate list and identify who appears to fit a role now.
+
+Use Landbase company, people, job-posting and career-history data, web research, and records you provide. Inspect, refine and export datasets; calculate counts and comparisons or analyze available historical data for market research, recruiting, portfolio analysis, sales and other company-and-people workflows.
 
 Bring a comprehensive B2B data platform into Claude: 300M+ verified contacts across 24M+ companies. Landbase is more than just a search engine. It's a compute platform for B2B data: describe the audience you need, then run real-time filters and calculations on the fly to find exactly the right targets.
 

@@ -1,5 +1,5 @@
 ---
-description: Search Landbase's B2B database via natural language and download results locally.
+description: Find companies and people in natural language with Landbase and download results locally.
 argument-hint: "<natural-language query>"
 allowed-tools: Bash(landbase-cli *)
 ---
@@ -47,3 +47,14 @@ Capture both stdout and stderr, plus the exit code.
 - `INVALID_INPUT` → surface the message verbatim.
 
 Do NOT attempt to re-interpret the JSON schema. Do NOT re-invoke the CLI without user confirmation.
+
+## Workflow guidance
+
+- **Staffing analysis:** Show the observed security and platform-engineering
+  headcounts alongside the calculated ratio.
+- **Portfolio hiring analysis:** Show the observed job-posting counts by
+  function. Describe the comparison as posting activity; postings alone do not
+  establish actual hires.
+- **Candidate refresh:** Show original and observed employers and roles side by
+  side, keep uncertain matches visible for review, and summarize the results by
+  talent pool.

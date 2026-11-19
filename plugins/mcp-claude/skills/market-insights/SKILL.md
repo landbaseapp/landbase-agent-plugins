@@ -48,6 +48,11 @@ answers yet.
      the numbers that the user asked for, with the units. Take the time window
      from the dataset (for example a column named `..._24m` is 24 months).
      Show at most 15 rows. Add other columns only when the user asked for them.
+   - For staffing ratios, show the observed security and platform-engineering
+     headcounts alongside the calculated ratio.
+   - For portfolio hiring comparisons, show the observed job-posting counts by
+     function. Describe the comparison as posting activity; postings alone do
+     not establish actual hires.
    - Give the dataset ID, so the user can check every number.
    - State only the definitions and limits that the dataset or the search
      proposal shows. Do not add limits that you guess.
