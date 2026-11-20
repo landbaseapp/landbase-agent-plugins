@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "digest": "792ad1999c431bd5920b175c238f0053b0b6a8f054bcb31802b094e6e83f1542",
+  "digest": "8179c57a12b5ca87574b9377f15b96fe08a3636031d003fcbbf7104f469b0a28",
   "versions": {
     "mcp-claude": "0.1.7",
-    "mcp-codex": "0.1.7",
+    "mcp-codex": "0.1.8",
     "cli-claude": "0.54.0",
     "cli-codex": "0.54.0",
     "skill-library": "0.2.0",
-    "mcp-portable": "0.1.7"
+    "mcp-portable": "0.1.8"
   },
   "files": [
     {
@@ -23,12 +23,12 @@
     {
       "path": ".codex-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "2a7731b917bc23f445c3a170c8262d6570675adfe859405224c19792f1515b9c"
+      "sha256": "aa52efda9c6ce5b917f2ee5f7a6a68ef7992a02a1ad7cb595151af6478c41228"
     },
     {
       "path": ".mcp.json",
       "mode": "100644",
-      "sha256": "e26aa47f649f432715edab1cb6f3bddf3e8b4a3cf7d25b2b9c19b63496716b35"
+      "sha256": "e036c0872dfac327fba482d2968cb6d6b888f37fda6b500afed1d6e42f1ce4b8"
     },
     {
       "path": "LICENSE",
@@ -38,17 +38,17 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "18fac59761a26106aaea87d1c175d29c9b7e18135b6fae22d7e986b1e6a23f8e"
+      "sha256": "603d872c46816b887189943870347440f3eb3c5b4ab15cbfab2b112abe7ca343"
     },
     {
       "path": "mcp.json",
       "mode": "100644",
-      "sha256": "8477b9fd2a802bb562a614b72cbc878e0aee8807a66e979dbea824d6019a3862"
+      "sha256": "d274af20b9124d230c7c9fe563c003af3ada7a8f02e83c4a111165b63f100f2d"
     },
     {
       "path": "plugin.json",
       "mode": "100644",
-      "sha256": "46dd9d0ebbd8cf027311de01560a996b64faddf242367fe89c3858ee172358ad"
+      "sha256": "4e523780bd432c987f6d38afd1b5121ba742349a1b312f4432a9a0737cc4ebe2"
     },
     {
       "path": "plugins/cli-claude/.claude-plugin/plugin.json",
@@ -373,7 +373,7 @@
     {
       "path": "skills/get-started/SKILL.md",
       "mode": "100644",
-      "sha256": "65d81f4fb04756da922e3df1df9af3383f9aa0fff4911f97fc6bcd62065623d3"
+      "sha256": "c6bbecf0a327144b8259cd884779031eb7b5acfb20ee86a755087ace662e50a5"
     },
     {
       "path": "skills/import-and-match/SKILL.md",

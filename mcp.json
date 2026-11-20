@@ -3,7 +3,8 @@
   "mcpServers": {
     "landbase": {
       "type": "streamable-http",
-      "url": "https://mcp.landbase.com/mcp",
+      "url": "https://mcp.landbase.com/mcp/openai",
+      "headers": { "X-Landbase-Client": "openai" },
       "extensions": {
         "com.openai": {
           "auth": {

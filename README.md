@@ -4,6 +4,10 @@ The Claude MCP plugin lives in [plugins/mcp-claude/](plugins/mcp-claude/).
 Use that folder for Claude Directory submissions; the repository also contains
 separate CLI plugins and a shared CLI skill library.
 
+The Codex package and portable `mcp.json` use the restricted Landbase endpoint
+without billing tools. That catalog also applies when another host installs the
+portable package.
+
 Find, research, and analyze companies and people using Landbase datasets, web research, and data you provide.
 
 Use Landbase to discover companies and people, research or evaluate them, and answer questions across records, lists, and populations.

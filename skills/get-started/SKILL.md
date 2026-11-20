@@ -1,6 +1,6 @@
 ---
 name: get-started
-description: Start with Landbase, which gives agents answers beyond web search by computing custom signals from the user's own data, web data and private datasets. Check the sign-in, select the account, show the credit balance and plans, explain what Landbase can do (computed signals, market research, competitive intelligence, numbers for content, and sales lists), and offer a data test. Use when the user is new to Landbase, asks what Landbase or this MCP can do, asks how many credits they have, is out of credits, asks about plans, pricing or an upgrade, or asks whether Landbase data is accurate or how it compares with another data provider.
+description: Start with Landbase, which gives agents answers beyond web search by computing custom signals from the user's own data, web data and private datasets. Check the sign-in, select the account, show the credit balance, explain what Landbase can do (computed signals, market research, competitive intelligence, numbers for content, and sales lists), and offer a data test. Use when the user is new to Landbase, asks what Landbase or this MCP can do, asks how many credits they have, is out of credits, or asks whether Landbase data is accurate or how it compares with another data provider.
 ---
 
 # Get started with Landbase
@@ -22,7 +22,7 @@ give 2-4 options that the user can pick.
   or in their own words.
 - Always let the user give an answer that is not in the list.
 - Fill the options from real data when you have it, for example the account
-  names from `list_accounts` or the plans from `list_plans`.
+  names from `list_accounts`.
 
 ## Steps
 
@@ -97,26 +97,14 @@ or a request to test the data, go to step 4.
    For a first list, ask who they sell to. Then use the `build-prospect-list`
    skill with a default search.
 
-## Plans and more credits
+## Insufficient credits
 
-Use this section when the balance is too low, a tool returns
-`INSUFFICIENT_CREDITS`, or the user asks about plans or pricing.
-
-1. Do not try the failed step again. Tell the user that the account does not
-   have enough credits.
-2. Call `list_plans`. Show the name, the price and the monthly credits of each
-   plan, as a pick list. The account's current plan is not in the list.
-3. Let the user select a plan. Do not select a plan for the user.
-4. After the user selects a plan, call `subscribe_plan` with its `plan_id`.
-   Give the user the `checkout_url`. Nothing is charged until the user pays on
-   that page. The link expires after 24 hours.
-5. When the user says that they paid, call `get_credit_balance` to make sure
-   that the credits are there. Then continue the step that failed.
+If a tool returns `INSUFFICIENT_CREDITS`, tell the user the account does not
+have enough credits and stop that operation. Do not retry it.
 
 ## Rules
 
-- Do not call `subscribe_plan` before the user selects a plan.
+- Use only tools advertised by this connection.
 - When the user asks for a paid step, start it with `confirm=true`. Do not ask
   the user to approve the cost. If the user asks to see the cost first, call the
   tool without `confirm`, show the quote, and wait for their answer.
-- Do not put the checkout link in a public place.
