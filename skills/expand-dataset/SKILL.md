@@ -65,21 +65,25 @@ For temporal, coverage-sensitive, or semantic/seed requests, read
 
 ## Execute the expansion
 
-Use `search(mode="research")` when the expansion needs calculations across
+Use `search` with its default routing when the expansion needs calculations across
 related records, career-history conditions, or joins to the wider Landbase data.
 Use `transform_dataset` when the source rows already contain all required inputs.
-Follow the tools' polling contract. When research mode returns a proposal, check
-that its logic and columns match the request, then confirm it at once with its
-returned `session_id` in the same research mode. Do not ask the user to approve
-the cost. If the proposal does not match, refine it first; changed work needs an
-updated proposal.
+Follow the tools' polling contract. Show the provisional preview, then continue
+requested full results with `action="run"`, `confirm=true`, `based_on_dataset_id`
+and the original `session_id`. ADC receives the saved plan. Follow returned
+qualification and filtering steps to completion. Pause for sample review only
+when `review_before_run=true`. Revise criteria only on explicit feedback.
 Inspect the completed result before reuse and use a successful workflow's
 `output_dataset_id` for the next step.
 
 Run the paid steps that the user asked for with `confirm=true` on the first call,
 in interactive and unattended runs. Landbase deducts the credits when a step runs;
-do not ask the user to approve the cost. If the user asks to see the cost first,
-call the tool without `confirm`, show the quote, and wait for their answer. Never
+do not ask the user to approve the cost. For cost-first default Search, call
+`action="prepare"` with the exact preview's `based_on_dataset_id` and original
+`session_id`, omitting query. Show the estimate and wait for approval, then call
+`action="run"`, `confirm=true` with the returned `quote_id` and the same preview
+and session references. For other paid workflows, omit `confirm` to obtain a
+quote, show it and wait for approval before running with `confirm=true`. Never
 run an optional addition that the user did not accept. If Landbase tools are
 unavailable, provide the proposed query and explain the missing connection.
 
@@ -103,7 +107,7 @@ an optional expansion; an offer does not authorize another step.
 - Inspect an earlier dataset's status, fields and coverage before reuse. Branch
   by supplying that dataset ID to the next tool and record its new output ID.
   Before combining branches, check join keys, duplicate handling and missing rows; use
-  `search(mode="research")` for supported multi-dataset joins. A single-dataset transform
+  `search` for supported multi-dataset joins. A single-dataset transform
   cannot read arbitrary sibling datasets.
 - Report which dataset each branch used and where its outputs are. Reusing an
   earlier snapshot preserves its original coverage and age; obtain fresh data
@@ -117,7 +121,7 @@ calculation limits. Route accepted follow-ups by their required data:
 - Good-fit examples selected by the user: offer similar-company expansion using
   a dataset of those seeds, via `run_workflow(workflow="similar_company_expansion")`.
 - Useful accounts missing prioritization data: offer derived columns through
-  research-mode search referencing the dataset ID, or `enrich_dataset` for stored
+  search referencing the dataset ID, or `enrich_dataset` for stored
   attributes. Use `research_dataset` for new per-row evidence, and
   `qualify_dataset` for yes/no checks.
 - Existing rows already contain the inputs: use `transform_dataset` for SQL over

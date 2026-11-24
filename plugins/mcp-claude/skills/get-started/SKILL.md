@@ -35,7 +35,7 @@ or a request to test the data, go to step 4.
    - If the user has more than one account, show the account names as a pick
      list. Pass the selected `account_id` on every later call.
 2. **Show the credit balance.** Call `get_credit_balance`. Tell the user the
-   number of credits. These steps use credits: research-mode search,
+   number of credits. These steps use credits: full search execution,
    qualification, custom research and contact enrichment. Landbase deducts the
    credits when the step runs. Do not ask the user to approve the cost. If the
    user asks to see the cost first, show the quote and wait for their answer.

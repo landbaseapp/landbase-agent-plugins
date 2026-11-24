@@ -83,7 +83,7 @@ computer.
 
 ## Credits and approvals
 
-Some operations use Landbase credits: research-mode search, qualification,
+Some operations use Landbase credits: full search execution, qualification,
 custom research and contact enrichment. When you ask for one of these, Landbase
 deducts the credits when it runs. Claude does not stop to ask you to approve the
 cost. Lookalike expansion, attribute enrichment and downloads cost 0 credits.

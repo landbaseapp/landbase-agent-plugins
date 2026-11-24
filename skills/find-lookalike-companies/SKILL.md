@@ -43,6 +43,6 @@ credits today. The result can have thousands of companies.
   status is `FAILED` or `CANCELLED`, stop and tell the user the reason.
 - The workflow costs 0 credits today, so there is no cost to approve. The
   tool still needs `confirm=true` to start it. Lookalikes that you build with
-  `search(mode="research")` are different: that search uses credits.
+  `search(skip_preview=true)` are different: that search uses credits.
 - Keep the `workflow_run_id`. A timeout does not stop the run. Check the status
   before you start the run again.

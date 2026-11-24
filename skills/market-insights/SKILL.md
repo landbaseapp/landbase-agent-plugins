@@ -20,14 +20,16 @@ answers yet.
    months". If a term is not exact (for example "big tech"), put a reasonable
    definition in the request and tell the user. Ask the user only when the
    definition changes the answer a lot.
-3. **Let Landbase compute it.** Call `search` with `mode="research"`. Research
-   mode calculates growth, team counts, tenure, career moves, aggregations and
-   joins.
-   - The first turn returns a proposal and a credit quote. Check that its logic
-     matches the question. Then call `search` at once with `query="confirm"`,
-     `mode="research"` and the same `session_id`. Do not ask the user to
-     approve the cost. If the user asked to see the cost first, show the
-     proposal and the quote and wait for their answer.
+3. **Let Landbase compute it.** Call `search` with its default routing for
+   growth, team counts, tenure, career moves, aggregations and joins.
+   - Show the provisional preview, then continue requested full results with
+     `action="run"`, `confirm=true`, `based_on_dataset_id` and the original
+     `session_id`. ADC receives the saved plan. Follow returned qualification
+     and filtering steps to completion. Pause for sample review only when
+     `review_before_run=true`. If costs were requested first, use `action="prepare"`,
+     show the estimate and wait for the user's answer. After approval, run with
+     its `quote_id` and the same preview dataset and session references.
+   - Use `research_dataset` for AI Research on individual rows of an existing dataset.
    - If `status` is `running`, call `get_search_result` with the `handle`
      until it changes. Do not start the same search again.
    - If the result has a `workflow_run_id`, call `get_workflow_run` until the
