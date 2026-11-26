@@ -31,10 +31,9 @@ description: Upload and match the user's company or people list (CSV, JSONL, spr
    `get_workflow_run` until the status is `SUCCEEDED`. The matched dataset is
    the `output_dataset_id`.
 7. **Show coverage.** Inspect `get_dataset_fields`. Compute whole-list counts
-   with `transform_dataset`, then preview its completed summary output.
-   `preview_dataset` SQL sees only the first 100 source rows. If `get_dataset`
-   confirms `row_count` is at most 100, preview aggregates cover the full list
-   and need no saved summary; otherwise they are sample counts. Separate populated candidate IDs from supported matches.
+   with aggregates in `preview_dataset` SQL, which reads every row and returns
+   at most 100 rows. To save a summary, use `transform_dataset`, then preview
+   its completed output. Separate populated candidate IDs from supported matches.
    Show some unresolved examples so the user can supply better identifiers.
    Name any saved summary dataset and explain it can be removed with
    `delete_dataset` after confirmation; deleting the source leaves the summary.
@@ -70,7 +69,7 @@ or counting supported identities, not when the user asks for possible matches.
    Enrichment of a candidate can supply observations, but does not establish
    that it is the original person. Preserve review status and evidence through
    enrichment and export. Do not overwrite CRM data.
-3. For counts, aggregate the **full** review dataset with `transform_dataset`.
+3. For counts, aggregate the full review dataset with `transform_dataset`.
    Count distinct supported `member_id` values, not source rows or all populated
    IDs. Report supported rows, distinct people, review-required rows and
    unmatched rows separately. Preview the small summary, and return the review

@@ -15,17 +15,17 @@ every call.
    `offset`.
 2. Call `get_dataset` for the name, the status, the row count and the columns.
    Set `include_runs=true` to see the processing runs.
-3. Inspect values with `preview_dataset`. Its SQL runs over only the first
-   100 source rows, including filters and aggregates. Label these as sample
-   results unless `get_dataset` confirms `row_count` is at most 100; then preview
-   SQL covers the full source. A small aggregate output alone proves nothing
-   about source coverage. For a larger or unknown-size whole-list count or
-   breakdown, use `transform_dataset` with SQL over
-   `input_dataset`, for example
+3. Inspect values with `preview_dataset`. Its SQL reads every row of the
+   dataset, so filters and aggregates cover the whole source. At most 100 rows
+   come back; `truncated: true` means more rows matched, so count with SQL
+   aggregates, not by counting returned rows. A whole-list count or breakdown
+   can run in `preview_dataset`, for example
    `SELECT industry, COUNT(*) AS row_count FROM input_dataset GROUP BY industry`.
-   Wait for `SUCCEEDED` (poll `get_workflow_run` if still running), then preview
-   the summary's `output_dataset_id`. Return the source and summary dataset IDs
-   and state what is counted. Tell the user that the summary was saved and can
+   To save it as a dataset, or when it has more than 100 rows, run the SQL with
+   `transform_dataset`. Wait for `SUCCEEDED` (poll `get_workflow_run` if still
+   running), then preview the summary's `output_dataset_id`. Return the source
+   and summary dataset IDs and state what is counted. Tell the user that the
+   summary was saved and can
    be removed with `delete_dataset` after confirmation; deleting the source
    leaves the summary. Check the summary's row count too: if its preview
    is truncated, do not present it as the complete breakdown. An explicit

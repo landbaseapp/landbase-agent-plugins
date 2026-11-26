@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "digest": "d3a015578108fa4d66e491d213f66b9915bbabad0323adae455aeae45f33a888",
+  "digest": "82919a07da89aaf23177489cee139f983b7183df15fc613033fda75410d9f0bf",
   "versions": {
-    "mcp-claude": "0.1.8",
-    "mcp-codex": "0.1.9",
+    "mcp-claude": "0.1.9",
+    "mcp-codex": "0.1.10",
     "cli-claude": "0.54.0",
     "cli-codex": "0.54.0",
     "skill-library": "0.2.0",
-    "mcp-portable": "0.1.9"
+    "mcp-portable": "0.1.10"
   },
   "files": [
     {
@@ -23,7 +23,7 @@
     {
       "path": ".codex-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "09cf04f555c46abcefc03358d59044e2b6594344f87cd32a7e1a85df558942e0"
+      "sha256": "7fb3d5cb55c5d0efbe3d6f2dc8ae38cbe247f8b9ecffcf6bbb07ec1a9de59eab"
     },
     {
       "path": ".mcp.json",
@@ -48,7 +48,7 @@
     {
       "path": "plugin.json",
       "mode": "100644",
-      "sha256": "8f9ddacd543553a269214e2f9ecbf90a34e2114c3f64c90f3c45c1c571543464"
+      "sha256": "57f3ddd056b4a17cd7a8f638c00af53d7914a7298f106f9380e482cdd643b6f7"
     },
     {
       "path": "plugins/cli-claude/.claude-plugin/plugin.json",
@@ -118,7 +118,7 @@
     {
       "path": "plugins/mcp-claude/.claude-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "d80d0c52619345159465b0b1f0ec1779de1b9d94a89b146ce9912b93aa0e1e86"
+      "sha256": "dee4c4b398c50b6527716bc0598b80fd553b5d2efca4e9887517280283797b29"
     },
     {
       "path": "plugins/mcp-claude/.mcp.json",
@@ -138,7 +138,7 @@
     {
       "path": "plugins/mcp-claude/skills/advanced-search/SKILL.md",
       "mode": "100644",
-      "sha256": "95250b0585d78a0220ff6deeb09b1c8331334b87d248478dc1343a4a7c1bfadf"
+      "sha256": "399c7443ae1511642886608576ff70af397d933e65853db5e8a8d6206cb3d1e4"
     },
     {
       "path": "plugins/mcp-claude/skills/build-prospect-list/SKILL.md",
@@ -168,7 +168,7 @@
     {
       "path": "plugins/mcp-claude/skills/find-contact-info/SKILL.md",
       "mode": "100644",
-      "sha256": "c3e341519b2e92c59683a0e92ead405c0ce70662bfadd92998c7a53731fd2626"
+      "sha256": "223124aee79cf79b9d9cb3c45151c664cb81be5560bd3d667569f14ed5994b58"
     },
     {
       "path": "plugins/mcp-claude/skills/find-lookalike-companies/SKILL.md",
@@ -183,22 +183,22 @@
     {
       "path": "plugins/mcp-claude/skills/import-and-match/SKILL.md",
       "mode": "100644",
-      "sha256": "6052756f9924e46e9551cb046ccbf8d10ffdae7260c3cec56b4adef08f6bbb26"
+      "sha256": "3a07afb25e35fa94ff67feb6f985a6f5673ffe100c61765bfe5251696b84d4d3"
     },
     {
       "path": "plugins/mcp-claude/skills/manage-datasets/SKILL.md",
       "mode": "100644",
-      "sha256": "9a43b97fe12996204a24a2a6a5fb821ae5ce23cba16851bd0b5b37a97b416b95"
+      "sha256": "8e0a76a496ff2d5c5e80301988d137c38fe5e55d3e4989a915385e9991ef30d8"
     },
     {
       "path": "plugins/mcp-claude/skills/market-insights/SKILL.md",
       "mode": "100644",
-      "sha256": "9f88806ad60b64247e030c59727e2b0dca6d7a62eedba55b0f94ce6518d276a4"
+      "sha256": "a6308351bde5ad5e5e4b4621ed986eaddb2978fd64cc0ccab777efde8dcbb8b7"
     },
     {
       "path": "plugins/mcp-claude/skills/qualify-list/SKILL.md",
       "mode": "100644",
-      "sha256": "8aba54b8957cd7925769c02f2cc766233f0350410f3a96f23fc08d61af87bfb6"
+      "sha256": "9eb0bd5dcede45c6dd23e62f8d640692ffb5dac3c3f11225df9c6f221fa939ff"
     },
     {
       "path": "plugins/mcp-claude/skills/research-accounts/SKILL.md",
@@ -333,7 +333,7 @@
     {
       "path": "skills/advanced-search/SKILL.md",
       "mode": "100644",
-      "sha256": "95250b0585d78a0220ff6deeb09b1c8331334b87d248478dc1343a4a7c1bfadf"
+      "sha256": "399c7443ae1511642886608576ff70af397d933e65853db5e8a8d6206cb3d1e4"
     },
     {
       "path": "skills/build-prospect-list/SKILL.md",
@@ -363,7 +363,7 @@
     {
       "path": "skills/find-contact-info/SKILL.md",
       "mode": "100644",
-      "sha256": "c3e341519b2e92c59683a0e92ead405c0ce70662bfadd92998c7a53731fd2626"
+      "sha256": "223124aee79cf79b9d9cb3c45151c664cb81be5560bd3d667569f14ed5994b58"
     },
     {
       "path": "skills/find-lookalike-companies/SKILL.md",
@@ -378,22 +378,22 @@
     {
       "path": "skills/import-and-match/SKILL.md",
       "mode": "100644",
-      "sha256": "6052756f9924e46e9551cb046ccbf8d10ffdae7260c3cec56b4adef08f6bbb26"
+      "sha256": "3a07afb25e35fa94ff67feb6f985a6f5673ffe100c61765bfe5251696b84d4d3"
     },
     {
       "path": "skills/manage-datasets/SKILL.md",
       "mode": "100644",
-      "sha256": "9a43b97fe12996204a24a2a6a5fb821ae5ce23cba16851bd0b5b37a97b416b95"
+      "sha256": "8e0a76a496ff2d5c5e80301988d137c38fe5e55d3e4989a915385e9991ef30d8"
     },
     {
       "path": "skills/market-insights/SKILL.md",
       "mode": "100644",
-      "sha256": "9f88806ad60b64247e030c59727e2b0dca6d7a62eedba55b0f94ce6518d276a4"
+      "sha256": "a6308351bde5ad5e5e4b4621ed986eaddb2978fd64cc0ccab777efde8dcbb8b7"
     },
     {
       "path": "skills/qualify-list/SKILL.md",
       "mode": "100644",
-      "sha256": "8aba54b8957cd7925769c02f2cc766233f0350410f3a96f23fc08d61af87bfb6"
+      "sha256": "9eb0bd5dcede45c6dd23e62f8d640692ffb5dac3c3f11225df9c6f221fa939ff"
     },
     {
       "path": "skills/research-accounts/SKILL.md",

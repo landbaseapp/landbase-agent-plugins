@@ -46,11 +46,12 @@ credits.
 8. **Show the result.** Use the `output_dataset_id` of the full run, not the
    sample output. Call `get_dataset_fields`
    to find the result column (for example `ai_qualification_result`) and the
-   evidence columns. For whole-list counts, use `transform_dataset`, for example
+   evidence columns. For whole-list counts, run an aggregate in
+   `preview_dataset`, for example
    `SELECT ai_qualification_result, COUNT(*) FROM input_dataset GROUP BY 1`.
-   Wait for `SUCCEEDED`, then preview the summary output. Preview SQL sees only
-   the first 100 source rows; use it directly for counts only if `get_dataset`
-   confirms `row_count` is at most 100. Label example rows as samples. Return
+   Preview SQL reads every row and returns at most 100 rows. To save the counts
+   as a dataset, use `transform_dataset`, wait for `SUCCEEDED`, then preview the
+   summary output. Label example rows as samples. Return
    the full result ID and any saved summary ID, and say the summary is a new
    dataset removable with `delete_dataset` after confirmation.
    Then show the rows that passed and the evidence. To keep only those rows,

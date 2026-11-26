@@ -28,10 +28,11 @@ a dataset. It uses credits. Phone numbers cost more credits than emails.
    take a long time. Continue with the same run ID.
 6. **Show the result.** Use the `output_dataset_id`. Call `get_dataset_fields`
    to find the email and phone columns. Count rows with email and phone values
-   over the full output using `transform_dataset`; wait for `SUCCEEDED` and
-   preview its summary. Preview SQL sees only the first 100 source rows; use
-   it directly for counts only if `get_dataset` confirms `row_count` is at most
-   100. Show example rows as samples. Return the result ID and any saved summary
+   over the full output with `COUNT` in `preview_dataset` SQL, which reads every
+   row and returns at most 100 rows. To save the counts as a dataset, use
+   `transform_dataset`, wait for `SUCCEEDED` and preview its summary. Count
+   with SQL, not by counting returned rows. Show example rows as samples.
+   Return the result ID and any saved summary
    ID, and say the summary is a new dataset removable with `delete_dataset`
    after confirmation.
 7. **Offer a file.** To give the user a file, use the `export-list` skill.

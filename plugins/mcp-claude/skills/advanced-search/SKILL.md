@@ -49,11 +49,11 @@ that: it reads each company's website and keeps only the real fits.
    final dataset ID. Compute fits found only by the wide search over the full
    datasets using `transform_dataset` and the same company key; final rows
    absent from list A are the added fits. Do not infer this from preview rows
-   or subtract the unqualified search sizes. Preview SQL sees only the first
-   100 source rows; it covers a whole input only when metadata confirms at most
-   100 rows. Preview completed summaries, label examples as samples, and name
-   any saved summary datasets as removable with `delete_dataset` after
-   confirmation. If the available fields or transform inputs cannot establish
+   or subtract the unqualified search sizes. Preview SQL reads every row of
+   one dataset but returns at most 100 rows. Preview completed summaries, label
+   examples as samples, and name any saved summary datasets as removable with
+   `delete_dataset` after confirmation. If the available fields or transform
+   inputs cannot establish
    the added-fit count, say so. You can state the credits used. Make at most
    one optional suggestion.
 
