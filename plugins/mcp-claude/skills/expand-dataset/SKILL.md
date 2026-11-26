@@ -68,21 +68,19 @@ For temporal, coverage-sensitive, or semantic/seed requests, read
 Use `search` with its default routing when the expansion needs calculations across
 related records, career-history conditions, or joins to the wider Landbase data.
 Use `transform_dataset` when the source rows already contain all required inputs.
-Follow the tools' polling contract. Show the provisional preview, then continue
-requested full results with `action="run"`, `confirm=true`, `based_on_dataset_id`
-and the original `session_id`. ADC receives the saved plan. Follow returned
-qualification and filtering steps to completion. Pause for sample review only
-when `review_before_run=true`. Revise criteria only on explicit feedback.
+Follow the returned `next_step` and polling contract. Search can return a proposal
+and credit quote before a dataset exists. Continue requested work with
+`search(query="confirm", session_id=<same session>)`. If costs were requested first,
+show the quote and wait; otherwise do not ask for cost approval.
+Revise criteria only on explicit feedback.
 Inspect the completed result before reuse and use a successful workflow's
 `output_dataset_id` for the next step.
 
 Run the paid steps that the user asked for with `confirm=true` on the first call,
 in interactive and unattended runs. Landbase deducts the credits when a step runs;
-do not ask the user to approve the cost. For cost-first default Search, call
-`action="prepare"` with the exact preview's `based_on_dataset_id` and original
-`session_id`, omitting query. Show the estimate and wait for approval, then call
-`action="run"`, `confirm=true` with the returned `quote_id` and the same preview
-and session references. For other paid workflows, omit `confirm` to obtain a
+do not ask the user to approve the cost. Search uses its proposal and
+`query="confirm"` in the same session as described above. For other paid workflows,
+omit `confirm` to obtain a
 quote, show it and wait for approval before running with `confirm=true`. Never
 run an optional addition that the user did not accept. If Landbase tools are
 unavailable, provide the proposed query and explain the missing connection.

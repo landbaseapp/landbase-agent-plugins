@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "landbase",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Use Landbase to discover companies and people, research or evaluate them, and answer questions across records, lists, and populations.\n\nDiscover by custom criteria: Find people or companies using calculated attributes. For example, find companies with substantial platform-engineering teams and compare their security-to-platform-engineering staffing ratios.\n\nConnect data, uncover signals: Combine existing records with external context. For example, identify portfolio companies with more engineering than sales job postings.\n\nRefresh and reclassify records: Update information and reassess which records fit. For example, refresh a candidate list and identify who appears to fit a role now.\n\nUse Landbase company, people, job-posting and career-history data, web research, and records you provide. Inspect, refine and export datasets; calculate counts and comparisons or analyze available historical data for market research, recruiting, portfolio analysis, sales and other company-and-people workflows."
 }

@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "digest": "82919a07da89aaf23177489cee139f983b7183df15fc613033fda75410d9f0bf",
+  "digest": "6ce47c3974ab3ef7c95cb7e3b41f383664e59024af9a6c3b195b78279c48c254",
   "versions": {
-    "mcp-claude": "0.1.9",
-    "mcp-codex": "0.1.10",
+    "mcp-claude": "0.1.10",
+    "mcp-codex": "0.1.11",
     "cli-claude": "0.54.0",
     "cli-codex": "0.54.0",
     "skill-library": "0.2.0",
-    "mcp-portable": "0.1.10"
+    "mcp-portable": "0.1.11"
   },
   "files": [
     {
@@ -23,7 +23,7 @@
     {
       "path": ".codex-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "7fb3d5cb55c5d0efbe3d6f2dc8ae38cbe247f8b9ecffcf6bbb07ec1a9de59eab"
+      "sha256": "4bc65300f0c8156b77732c75ac537be3a007d3306c19e2f741c4e5c1dc8dbfba"
     },
     {
       "path": ".mcp.json",
@@ -48,7 +48,7 @@
     {
       "path": "plugin.json",
       "mode": "100644",
-      "sha256": "57f3ddd056b4a17cd7a8f638c00af53d7914a7298f106f9380e482cdd643b6f7"
+      "sha256": "c7a601af2604bee66193bb645f256d580a598267122e5d754db5d15cc00bdfb6"
     },
     {
       "path": "plugins/cli-claude/.claude-plugin/plugin.json",
@@ -118,7 +118,7 @@
     {
       "path": "plugins/mcp-claude/.claude-plugin/plugin.json",
       "mode": "100644",
-      "sha256": "dee4c4b398c50b6527716bc0598b80fd553b5d2efca4e9887517280283797b29"
+      "sha256": "adfce89304dd9917ae8e3aeca1d7474cb464c308fbe85a2d2399684857b5c74e"
     },
     {
       "path": "plugins/mcp-claude/.mcp.json",
@@ -143,12 +143,12 @@
     {
       "path": "plugins/mcp-claude/skills/build-prospect-list/SKILL.md",
       "mode": "100644",
-      "sha256": "4accd3dc97f9d01ff92f922b35dd14d32734695cebe72f2019de978e262bbf13"
+      "sha256": "463c693edbdd236a68891281b954db9472f0bbc4f4999e10eb6aa1212c02b985"
     },
     {
       "path": "plugins/mcp-claude/skills/expand-dataset/SKILL.md",
       "mode": "100644",
-      "sha256": "507660c58a61a42a6f1619e2e1c1ea921c693732f843a0b91603a4cc0a69ee09"
+      "sha256": "f962cd3bec82951ce780a979c1c06d49e882d5b5781267dfee7ded0dbcc376ca"
     },
     {
       "path": "plugins/mcp-claude/skills/expand-dataset/agents/openai.yaml",
@@ -173,7 +173,7 @@
     {
       "path": "plugins/mcp-claude/skills/find-lookalike-companies/SKILL.md",
       "mode": "100644",
-      "sha256": "2e201f1dbd42f3196083b47c60c8e2437b437eedc2dd5efce4e5f039be1b0b94"
+      "sha256": "27bfef1c047d50105ee84336267f37463910341ce85ac36fe9454efc3addad21"
     },
     {
       "path": "plugins/mcp-claude/skills/get-started/SKILL.md",
@@ -193,7 +193,7 @@
     {
       "path": "plugins/mcp-claude/skills/market-insights/SKILL.md",
       "mode": "100644",
-      "sha256": "a6308351bde5ad5e5e4b4621ed986eaddb2978fd64cc0ccab777efde8dcbb8b7"
+      "sha256": "661375ba3abf24327798f177388a68fc950a094a60a32b2ca1b93be4af0dbdb8"
     },
     {
       "path": "plugins/mcp-claude/skills/qualify-list/SKILL.md",
@@ -338,12 +338,12 @@
     {
       "path": "skills/build-prospect-list/SKILL.md",
       "mode": "100644",
-      "sha256": "4accd3dc97f9d01ff92f922b35dd14d32734695cebe72f2019de978e262bbf13"
+      "sha256": "463c693edbdd236a68891281b954db9472f0bbc4f4999e10eb6aa1212c02b985"
     },
     {
       "path": "skills/expand-dataset/SKILL.md",
       "mode": "100644",
-      "sha256": "507660c58a61a42a6f1619e2e1c1ea921c693732f843a0b91603a4cc0a69ee09"
+      "sha256": "f962cd3bec82951ce780a979c1c06d49e882d5b5781267dfee7ded0dbcc376ca"
     },
     {
       "path": "skills/expand-dataset/agents/openai.yaml",
@@ -368,7 +368,7 @@
     {
       "path": "skills/find-lookalike-companies/SKILL.md",
       "mode": "100644",
-      "sha256": "2e201f1dbd42f3196083b47c60c8e2437b437eedc2dd5efce4e5f039be1b0b94"
+      "sha256": "27bfef1c047d50105ee84336267f37463910341ce85ac36fe9454efc3addad21"
     },
     {
       "path": "skills/get-started/SKILL.md",
@@ -388,7 +388,7 @@
     {
       "path": "skills/market-insights/SKILL.md",
       "mode": "100644",
-      "sha256": "a6308351bde5ad5e5e4b4621ed986eaddb2978fd64cc0ccab777efde8dcbb8b7"
+      "sha256": "661375ba3abf24327798f177388a68fc950a094a60a32b2ca1b93be4af0dbdb8"
     },
     {
       "path": "skills/qualify-list/SKILL.md",

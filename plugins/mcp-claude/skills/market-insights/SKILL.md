@@ -22,13 +22,10 @@ answers yet.
    definition changes the answer a lot.
 3. **Let Landbase compute it.** Call `search` with its default routing for
    growth, team counts, tenure, career moves, aggregations and joins.
-   - Show the provisional preview, then continue requested full results with
-     `action="run"`, `confirm=true`, `based_on_dataset_id` and the original
-     `session_id`. ADC receives the saved plan. Follow returned qualification
-     and filtering steps to completion. Pause for sample review only when
-     `review_before_run=true`. If costs were requested first, use `action="prepare"`,
-     show the estimate and wait for the user's answer. After approval, run with
-     its `quote_id` and the same preview dataset and session references.
+   - Follow the returned `next_step`. When Search returns a proposal and credit quote,
+     continue with `search(query="confirm", session_id=<same session>)`.
+     If the user requested costs first, show the quote and wait; otherwise continue
+     their requested work without asking for cost approval.
    - Use `research_dataset` for AI Research on individual rows of an existing dataset.
    - If `status` is `running`, call `get_search_result` with the `handle`
      until it changes. Do not start the same search again.
