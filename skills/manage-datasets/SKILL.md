@@ -53,9 +53,8 @@ A timeout does not stop a search. Do not start the same search again.
 
 1. If you have the `handle`, call `get_search_result` with it.
 2. If you have only the `session_id`, call `get_latest_agent_run` with it. Set
-   `agent="preview_dataset_creator"` for the initial default search, or
-   `agent="advanced_dataset_creator"` for its full run or direct ADC. To see all
-   runs in the session, call `list_agent_runs`.
+   `agent="advanced_dataset_creator"` for Search. To see all runs in the
+   session, call `list_agent_runs` with that same agent and session ID.
 3. Call `wait_for_agent_run` with the run ID. If the `outcome` is
    `wait_expired` or the search is still running, call it again. If the
    `outcome` is `failed` or `cancelled`, tell the user the reason.
